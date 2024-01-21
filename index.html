@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="stylesheet" href="https://use.typekit.net/jjb5zgc.css">
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
   <title>The orient Express</title>
 </head>
 
 <body>
   <header>
+    <img src="./public/assets_dev/Logo.png" alt="Logo of train world" class="logo">
     <div class="backgroundHeader">
       <div class="Sun"></div>
       <img src="./public/assets_dev/PARA/PARA_Berlin_landmark.png" alt="Tower of Berlin" class="berlinTower">
@@ -19,7 +20,238 @@
       <img src="./public/assets_dev/PARA/PARA_Paris_Landmark.png" alt="Louvre in Paris" class="parisLouvre">
       <img src="./public/assets_dev/PARA/PARA_wagons.png" alt="Wagons of the Orient Express" class="wagons">
     </div>
+    <section class="header_title_section">
+      <h1 class="header_title">The Orient Express</h1>
+      <h2 class="header_title_Sub">Luxury at its finest</h2>
+      <p class="header_title_text">A story by Train World</p>
+    </section>
   </header>
+  <main>
+    <!-- Journey to Caïro -->
+    <section class="journeyToCaïro">
+      <h2 class="titleh2">
+        Journey To Caïro
+      </h2>
+      <p>
+        I vividly recall the disbelief that nearly overwhelmed me. There we stood, on the enchanting platform of <span
+          class="accentBold">Gare de
+          Lyon in Paris.</span> At that time, I was a young Parisian governess, employed by a wealthy businessman who
+        had to
+        travel to Cairo for a while. And I was to accompany him! It was 9 o'clock in the evening, and within half an
+        hour, the train would depart. <span class="accentBold">From Paris all the way to Cairo in just 6 days!</span> A
+        mixture of fear and excitement
+        engulfed me.
+      </p>
+      <img src="./public/assets_dev/PiramidesOfGiza.png" alt="Piramids of Giza">
+    </section>
+    <!-- 1889 -->
+    <div class="data1889">
+      <img src="./public/assets_dev/1889Mobile.png" alt="Year 1889">
+      <img src="./public/assets_dev/1889.png" alt="Year 1889" style="display: none;">
+      <p>Since 1889, one could <span class="accentBold">travel from Paris to Istanbul in just 3 nights twice a
+          week</span>. In 1906, the Simplon Tunnel
+        opened, cutting through the Alps, allowing the train to smoothly journey from Switzerland to Italy. It seemed
+        almost unimaginable at the time.
+      </p>
+    </div>
+    <!-- 1930 -->
+    <div class="data1930">
+      <img src="./public/assets_dev/1930Mobile.png" alt="Year 1930">
+      <img src="./public/assets_dev/1930.png" alt=" Year 1930" style="display:none;">
+      <div class="data1930_flexbox">
+        <img src="./public/assets_dev/Georges.png" alt="Foto van Georges Nagelmackers">
+        <p>
+          In the year 1930, we witnessed the <span class="accentBold">heyday of the Simplon Orient-Express.</span>
+          Behind me, two gentlemen
+          enthusiastically discussed the adventure that lay ahead. Although the train
+          originated in Europe, the first sleeper trains were introduced in America. The ingenious Belgian engineer
+          Georges Nagelmackers brought them to Europe, making them more luxurious than ever by founding the Compagnie
+          Internationale des Wagons-Lits.
+        </p>
+      </div>
+    </div>
+
+    <!-- interactive map Paris->.... -->
+    <div class="interactiveMap">
+      <h2 class="titleh2">Found out which route <br> Orient Express took.</h2>
+      <p>Choose a final destination on one of the buttons and discover the route the Orient Express did.</p>
+      <!-- MOBILE -->
+      <div class="mobile_interactiveMap">
+        <div class="interactiveMap_buttons"> <!-- using css grid to position -->
+          <button class="map__button map__button--istanbull">Istanbull</button>
+          <button class="map__button map__button--athens">Athens</button>
+          <button class="map__button map__button--belgrade">Belgrade</button>
+          <button class="map__button map__button--vienna">Vienna</button>
+        </div>
+        <div class="animation-container-mobile" id="animationContainerMobile">
+          <dotlottie-player class="lottiePlayer"
+            src="https://lottie.host/e034e6a8-f3e7-4bd8-b001-b0407cf6933b/NP9kXVQDWY.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
+      </div>
+
+      <!--DESK-->
+      <div class="interactiveMap_dropdown" style="display: none;">
+        <!-- Asking on consukt how i could do this -->
+      </div>
+    </div>
+
+
+    <!-- Embarking a journey of discovery-->
+    <section class="journeyOfDiscovery">
+      <h2 class="titleh2">
+        Embarking a journey <br> of discovery
+      </h2>
+      <p>
+        The platform was bustling, making it all the more intriguing. Even with the most vivid imagination, one could
+        not fathom <span class="accentBold">the diverse group of people gathering! Diplomats and statesmen, stars and
+          aristocrats, artists and writers, </span> even Eastern traders and Indian Maharajas heading home.
+      </p>
+      <p>
+        Our luggage was carefully loaded into baggage cars, and an attendant led us to our compartments. Ready to
+        depart! <span class="accentBold">First stop: Dijon, then Lausanne, Milan, Venice, Trieste, Zagreb, Belgrade, and
+          Sofia, finally arriving in Istanbul.</span> There, we enjoyed an overnight stay at the Pera Palace Hotel,
+        built by Georges
+        Nagelmackers'
+        Compagnie Internationale des Grands Hôtels.
+      </p>
+      <img src="./public/assets_dev/Laguage.png" alt="picture of luggage">
+    </section>
+
+    <!-- Unparralleled luxury -->
+    <section class="UnparalleledLuxury">
+      <h2 class="titleh2">
+        Unparalleled luxury
+      </h2>
+      <p>
+        As a governess, I had seen my share of luxury, but this was unparalleled.<span class="accentBold">The attention
+          to detail was truly</span>astonishing. I shared a compartment with the daughter, while mother and father had
+        their own spaces. Two beds stacked, a personal sink, and walls adorned with exquisite marquetry. Crisp linens
+        and woolen blankets adorned the beds, and we even had a button to summon the butler!
+      </p>
+      <h3>
+        Dicover for each wagon what kind of luxury there is
+      </h3>
+      <p>
+        The train consisted of 5 sleeping cars, a dining car, and two baggage cars. No lounge
+      </p>
+      <div class="flexbox_swipe">
+        <video src="./public/assets_dev/swipe.mp4" loop muted autoplay></video>
+        <h4>Swipe To the left</h4>
+      </div>
+      <div class="flexboxCarDetails">
+        <div class="flexboxCarDetails__dining">
+          <img src="./public/assets_dev/wagons_specify1.png" alt="illustration of dining wagon">
+          <button>Dining</button>
+        </div>
+        <div class="flexboxCarDetails__sleeping">
+          <img src="./public/assets_dev/wagons_specify1.png" alt="illustration of sleeping wagon">
+          <button>sleeping</button>
+        </div>
+        <div class="flexboxCarDetails__Baggage">
+          <img src="./public/assets_dev/wagons_specify2.png" alt="illustration of baggage wagon">
+          <button>Baggage</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Through 7 countries -->
+    <section class="sevenCountries">
+      <h2 class="titleh2">Trough 7 countries</h2>
+      <img src="./public/assets_dev/Stamp_combo_AE.png" alt="illustration of stamp Athens and Egypt">
+      <p>
+        The journey from Paris to Istanbul took only three days because the train ran day and night. I had expected a
+        tiring journey, but the ease and comfort astonished me.<span class="accentBold"> At the
+          beginning of the journey, the train conductor collected all the necessary documents, sparing us from being
+          awakened at night for border controls.</span>
+      </p>
+      <p>
+        It was fascinating to see the landscape change. <span class="accentBold">The farther we traveled, the
+          more exotic the surroundings became.</span> With the Simplon Orient-Express, you could also travel to Athens.
+        In Belgrade, the two cars destined for that journey were uncoupled, immediately replaced by two others: one from
+        Berlin and one via Vienna. This gave us the opportunity to enjoy the enchanting view in Belgrade.
+      </p>
+      <img src="./public/assets_dev/Stamp_Paris.png" alt="illustration Stamp of Paris">
+    </section>
+
+    <!--BridgeBewteen-->
+    <section>
+      <h2 class="titleh2">A bridge between <br> east and west</h2>
+      <p>
+        Eventually, we reached the
+        final destination of the Simplon Orient-Express: Sirkeci Station in Istanbul. A
+        magical station built in 1890 by the German architect August Jachmund, specifically for the Orient Express. It
+        was a splendid blend of Eastern and Western elements.
+      </p>
+
+      <dotlottie-player src="https://lottie.host/9e279fca-8f39-4594-a8c0-23c462be05a7/pTaOITbxbQ.json"
+        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+      </div>
+    </section>
+
+    <!-- video scrolltriger -->
+    <video src="./public/assets_dev/scrolltrigger.mp4" muted autoplay loop class="videoScrolltrigger"></video>
+
+    <!-- Istanball to caïro -->
+    <div class="IstanbullCairo">
+      <section>
+        <h2 class="titleh2">From Istanbull to Caïro</h2>
+        <p>
+          After our overnight stay at
+          the Pera Palace Hotel,<span class="accentBold"> we continued our journey with the Taurus Express, </span> also
+          owned by the Compagnie Internationale des Wagons-Lits. This train had two destinations: Baghdad and Cairo.
+          In Aleppo, the train was split for both destinations.
+        </p>
+      </section>
+      <dotlottie-player src="https://lottie.host/e92c2781-8843-4b86-998a-c46a7527720d/7zHKizT3DI.json"
+        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    </div>
+
+
+    <!-- comforatble but impressive -->
+    <div class="container_counter">
+      <div class="container_illustration_counter">
+        <!-- train -->
+        <div class="counter_item_train">
+          <h4>
+            <span class="counter--one">4</span> Trains
+          </h4>
+          <img src="./public/assets_dev/TrainCount.png" alt="Illustration of a locomotive">
+        </div>
+        <!-- ship -->
+        <div class="ship">
+          <h4>
+            <span class="counter--two">2</span> Ships
+          </h4>
+          <img src="./public/assets_dev/boot.png" alt="Illustration of a ship">
+        </div>
+        <!-- bus -->
+        <div class="bus">
+          <h4>
+            <span class="counter--three">1</span> Bus
+          </h4>
+          <img src="./public/assets_dev/Bus.png" alt="Illustration of a bus">
+        </div>
+      </div>
+      <section>
+        <h2 class="titleh2">Not comfortable <br> but impressive</h2>
+        <p>
+          Admittedly, our journey from Istanbul to Cairo was somewhat less comfortable than from Paris to Istanbul. It
+          took about the same time, but <span class="accentBold">we were immersed in a strange, exotic culture,</span>
+          so I
+          certainly had no reason to
+          complain. First, we traveled with the Taurus Express to Tripoli in Lebanon. Then, we continued with Rolls
+          Royce buses to Haifa in Palestine. Next was a train journey to Kantara at the Suez Canal, where we took a
+          ferry. A final train took us to Cairo. From Paris to our final destination, we needed four trains, two
+          ships,
+          a bus, and six days. In modern times, this seems unthinkable, but back then, it was truly impressively
+          swift!
+        </p>
+      </section>
+    </div>
+
+    <!-- END OF CODE -->
+  </main>
   <script type="module" src="/main.js"></script>
 </body>
 

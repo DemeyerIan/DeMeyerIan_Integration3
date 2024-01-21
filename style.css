@@ -31,18 +31,74 @@
   --step-7: clamp(4.7681rem, 3.9035rem + 4.1923vw, 7.1525rem);
 
   /*sizes*/
-  --size1: ;
-  --size2: ;
+  --size1h: 10dvh;
+  --size2h: 12dvh;
 
   /*mediaQueries*/
   --ipad: only screen and (min-width: 600px) and (orientation: portrait) /*don't forget @media var(); */
   --desktop: only screen and (min-width: 1024px); /*don't forget @media var(); */
 }
-
-body{
+html{
   background-color: var(--backgroundColor);
   font-family: var(--sofia);
+  color: var(--black);
 }
+
+body{
+  margin: 1dvh auto;
+}
+p{
+  line-height: 150%;
+  font-size: var(--step-1);
+  font-weight: var(--weight1);
+}
+h4{
+  color: var(--purple);
+}
+
+img{
+  width: 100%;
+}
+
+video{
+  width: 100%;
+}
+
+header{
+  background-color: green;
+}
+
+.accentBold{
+  color: var(--purple);
+}
+
+.journeyToCaïro{
+  background-color: hotpink;
+}
+
+.data1889{
+  background-color: orange;
+}
+
+.data1930{
+  background-color: blue;
+}
+
+.journeyOfDiscovery{
+  background-color: yellow;
+}
+
+
+.titleh2{
+  color: var(--purple);
+  font-family: var(--avory);
+  font-size: var(--step-3);
+  font-weight: var(--weight4);
+  margin-top: var(--size2h);
+}
+
+
+
 /* 
 .--step--2{
   font-size: var(--step--2);
