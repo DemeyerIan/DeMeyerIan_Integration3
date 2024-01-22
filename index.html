@@ -271,82 +271,100 @@
                   <img src="./public/assets_dev/camera.png" alt="illustration of a camera" class="popUpFigure">
                   <div class="PopUp_titleSound">
                     <h2 class="popUpTitle">Timeless Opulence</h2>
-                    <div class="soundButton">
-                      <div class="triangle"></div>
+                    <div class="soundButton" onclick="toggleSound('sound1', this)">
+                      <audio id="sound1" src="./public/sounds/testimonial1.wav"></audio>
+                      <div class="playPauseButton">
+                        <img src="./public/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
+                        <img src="./public/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
+                          style="display: none;">
+                      </div>
                     </div>
                   </div>
-                  <p>
-                    Unveiling the Extraordinary Journey
-                    I feel compelled to share with you the extraordinary tale of an experience that seems to have
-                    transcended the boundaries of time and luxury. A journey that unfolded on the Venice
-                    Simplon-Orient-Express, a train that boasts of Grand Suites rumored to be among the "most expensive
-                    hotel rooms" in the world, per square meter.
-
-                    A Lavish Voyage from Venice to London
-                    Imagine, if you will, a journey from Venice to London, where each square meter of the Grand Suites
-                    costs a staggering 24,000 euros. It was an escapade that whisked me away from the mundane, as if I
-                    held Willy Wonka's golden ticket, granted to me by the esteemed Belmond, the luxury purveyor of this
-                    magnificent train.
-
-                    Whispering Tales of Yesteryears
-                    The carriage, numbered 3309, whispered tales of yesteryears. A sleeper car from 1926 that once
-                    traversed the routes connecting Paris to Bucharest and Munich to Istanbul, marooned in a snowdrift
-                    outside Istanbul for five days in 1929 – an incident immortalized by Agatha Christie in "Murder on
-                    the
-                    Orient Express."
-
-                    Budapest Suite - A Mobile Work of Art
-                    This carriage now houses the Budapest Suite, a veritable work of art on wheels. Embroidered silks
-                    mingled with Lalique glass and Baccarat crystal, creating an ambiance that transcends mere opulence.
-                    The mirrors alone, a hefty 27,000 euros each, whispered secrets of the past.
-
-                    Culinary Delights and Visual Splendors
-                    In this mobile haven, guests are greeted with Veuve Clicquot Saint Petersbourg Champagne and Steluga
-                    Tsar Imperial caviar, enjoyed at their leisure throughout the journey. The suite, adorned with onyx,
-                    marble, and Murano glass, promises an experience that lingers like the notes of a cherished melody.
-
-                    The Scenic Symphony Through Europe
-                    As the train gently rolled through Europe, the Budapest Suite's modest sofa became my sanctuary.
-                    Through the large windows, the snowy Italian Alps, the chalets of Austria's Brenner Pass, the green
-                    pastures of Switzerland, and the vineyards of France unfolded like scenes from a vintage film.
-
-                    Culinary Magic in a Mobile Kitchen
-                    But the allure wasn't just visual. The culinary symphony orchestrated by Chef Jean Imbert in the
-                    six-meter-long, one-meter-wide kitchen was nothing short of magic. From the Champagne breakfast to
-                    the
-                    four-course dinner, each dish felt like a work of art.
-
-                    Quirks and Whispers in the Wind
-                    Yet, the journey wasn't without its quirks. The Budapest Suite's spacious ensuite bathroom was a
-                    charming but cozy affair. Yet, these were trifles, whispers in the wind when compared to the
-                    grandeur
-                    of the entire experience.
-
-                    Justifying the Price
-                    The question that lingered in the air, like the echoes of a bygone era, was whether a nearly $28,000
-                    journey for a single night could be justified. The answer, my dear, lies not just in the opulence
-                    but
-                    in the historic tapestry woven through this, elegant travel.
-                  </p>
                 </div>
+                <p>
+                  I feel compelled to share with you the extraordinary tale of an experience that seems to have
+                  transcended the boundaries of time and luxury. A journey that unfolded on the Venice
+                  Simplon-Orient-Express, a train that boasts of Grand Suites rumored to be among the "most expensive
+                  hotel rooms" in the world, per square meter.
+
+                  Imagine, if you will, a journey from Venice to London, where each square meter of the Grand Suites
+                  costs a staggering 24,000 euros. It was an escapade that whisked me away from the mundane, as if I
+                  held Willy Wonka's golden ticket, granted to me by the esteemed Belmond, the luxury purveyor of this
+                  magnificent train.
+
+                  The carriage, numbered 3309, whispered tales of yesteryears. A sleeper car from 1926 that once
+                  traversed the routes connecting Paris to Bucharest and Munich to Istanbul, marooned in a snowdrift
+                  outside Istanbul for five days in 1929 an incident immortalized by Agatha Christie in "Murder on
+                  the Orient Express."
+
+                  This carriage now houses the Budapest Suite, a veritable work of art on wheels. Embroidered silks
+                  mingled with Lalique glass and Baccarat crystal, creating an ambiance that transcends mere opulence.
+                  The mirrors alone, a hefty 27,000 euros each, whispered secrets of the past.
+
+                  In this mobile haven, guests are greeted with Veuve Clicquot Saint Petersbourg Champagne and Steluga
+                  Tsar Imperial caviar, enjoyed at their leisure throughout the journey. The suite, adorned with onyx,
+                  marble, and Murano glass, promises an experience that lingers like the notes of a cherished melody.
+
+                  As the train gently rolled through Europe, the Budapest Suite's modest sofa became my sanctuary.
+                  Through the large windows, the snowy Italian Alps, the chalets of Austria's Brenner Pass, the green
+                  pastures of Switzerland, and the vineyards of France unfolded like scenes from a vintage film.
+
+                  But the allure wasn't just visual. The culinary symphony orchestrated by Chef Jean Imbert in the
+                  six-meter-long, one-meter-wide kitchen was nothing short of magic. From the Champagne breakfast to
+                  the four-course dinner, each dish felt like a work of art.
+
+                  Yet, the journey wasn't without its quirks. The Budapest Suite's spacious ensuite bathroom was a
+                  charming but cozy affair. Yet, these were trifles, whispers in the wind when compared to the
+                  grandeur of the entire experience.
+
+                  The question that lingered in the air, like the echoes of a bygone era, was whether a nearly $28,000
+                  journey for a single night could be justified. The answer, my dear, lies not just in the opulence
+                  but in the historic tapestry woven through this slow, elegant travel.
+
+
+                </p>
               </div>
             </div>
-          </dialog>
         </div>
-        <div class="testimonialMartini">
-          <img src="./public/assets_dev/Enveloppe.png" alt="picture of an envelope" class="enveloppe--martini">
+        </dialog>
+      </div>
+      <div class="testimonialMartini">
+        <img src="./public/assets_dev/Enveloppe.png" alt="picture of an envelope" class="enveloppe--martini">
 
-        </div>
-        <div class="testimonialsChef">
-          <img src="./public/assets_dev/Enveloppe.png" alt="picture of an envelope" class="enveloppe--chef">
+      </div>
+      <div class="testimonialsChef">
+        <img src="./public/assets_dev/Enveloppe.png" alt="picture of an envelope" class="enveloppe--chef">
 
-        </div>
+      </div>
 
 
       </div>
     </section>
     <!-- END OF CODE -->
   </main>
+  <script>
+    function toggleSound(audioId, button) {
+      let audio = document.getElementById(audioId);
+      let playImage = button.querySelector('.playPauseButton_ContentPlay');
+      let pauseImage = button.querySelector('.playPauseButton_ContentPause');
+
+      if (audio) {
+        if (audio.paused) {
+          audio.play();
+          // Show pause icon and hide play icon
+          playImage.style.display = 'none';
+          pauseImage.style.display = 'block';
+        } else {
+          audio.pause();
+          // Show play icon and hide pause icon
+          playImage.style.display = 'block';
+          pauseImage.style.display = 'none';
+        }
+      } else {
+        console.error('Audio element not found for ID: ' + audioId);
+      }
+    }
+  </script>
   <script type="module" src="/main.js"></script>
 </body>
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#A14F98;}
+	.st1{display:none;}
+	.st2{display:inline;}
+	.st3{fill:#E7E0D3;}
+</style>
+<g id="play">
+	<g>
+		<path class="st0" d="M427.5,240L72.5,35c-7.7-4.4-17.3,1.1-17.3,10v410c0,8.9,9.6,14.4,17.3,10l355.1-205
+			C435.2,255.6,435.2,244.4,427.5,240z"/>
+	</g>
+</g>
+<g id="pause" class="st1">
+	<g class="st2">
+		<path class="st3" d="M212.3,467h-76.7c-7,0-12.7-5.7-12.7-12.7V45.7c0-7,5.7-12.7,12.7-12.7h76.7c7,0,12.7,5.7,12.7,12.7v408.7
+			C225,461.3,219.3,467,212.3,467z"/>
+		<path class="st3" d="M364.3,467h-76.7c-7,0-12.7-5.7-12.7-12.7V45.7c0-7,5.7-12.7,12.7-12.7h76.7c7,0,12.7,5.7,12.7,12.7v408.7
+			C377,461.3,371.3,467,364.3,467z"/>
+	</g>
+</g>
+</svg>

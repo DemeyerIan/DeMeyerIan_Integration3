@@ -3,6 +3,7 @@
   --black : #212121;
   --backgroundColor: #E7E0D3;
   --purple: #5C2A5B;
+  --playPause:#A14F98;
   --darkRed: #B7384A;
   --red: #ED4A4A;
   --orange: #EF7949;
@@ -79,6 +80,18 @@ video{
   border-radius: 50%;
   display: flex;
   align-items: center;
+  margin-right: 3px;
+}
+.playPauseButton_ContentPlay{
+  width: 70%;
+  margin-left: 2dvw;
+}
+.playPauseButton_ContentPause{
+  width: 70%;
+}
+.playPauseButton{
+  display: flex;
+  justify-content: center;
 }
 .container_popUp_testimonials{
   height: 100dvh;
@@ -166,6 +179,7 @@ video{
   width: 60%;
   margin: 0% 20%;
 }
+
 
 header{
   background-color: green;

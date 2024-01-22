@@ -18,6 +18,7 @@ const init = () => {
             updateLottiePlayerSrc(city);
         });
     });
+
 }
 
 
