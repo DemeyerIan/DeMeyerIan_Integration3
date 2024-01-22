@@ -64,6 +64,108 @@ video{
   width: 100%;
 }
 
+.dotlottie{
+  width: 100%;
+  transform: scale(1.4);
+  margin: 0 auto;
+}
+
+
+/*pop up */
+.soundButton{
+  background-color: var(--purple);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.container_popUp_testimonials{
+  height: 100dvh;
+}
+.PopUp_titleSound{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0px;
+}
+.popUpTitle{
+  color: var(--purple);
+  font-family: var(--avory);
+  font-size: var(--step-3);
+  font-weight: var(--weight4);
+}
+.dialogPopUp_divContainer{
+  background-color: var(--backgroundColor);
+  height: 80vh;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Ensure the content stacks vertically */
+}
+.popUpcentre::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+.popUpcentre::-webkit-scrollbar-thumb {
+  background-color: rgba(92, 42, 91,0.5); /* Set the color of the scrollbar thumb */
+  border-radius: 6px; /* Set the radius to make it round */
+}
+
+.popUpcentre::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the color of the scrollbar track */
+}
+.popUpcentre{
+  overflow-y: auto;
+  height: 95%;
+  width: 90%;
+  margin: 5% auto 0% auto;
+}
+.dialog--dialogOne {
+  display: flex;
+  flex-direction: column-reverse; /* Reverse the order of the flex container */
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgba(21, 21, 21, 0.7);
+  border: none;
+  padding: 0px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 34px solid #A14F98; /* Adjust color as needed */
+  transform: rotate(90deg);
+  margin: 0 3.5dvw;
+}
+.pupUpClose{
+  background-color: var(--purple);
+  border-radius: 50%;
+  float: right;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+}
+.pupUpClose_content{
+  color: #A14F98;
+  font-family: var(--sofia);
+  border: none;
+  margin: -5px 0 0 2px;
+  font-size: var(--step-5);
+  background-color: transparent;
+
+}
+.popUpFigure{
+  width: 80%;
+  margin: 0% 10%;
+}
+
 header{
   background-color: green;
 }
