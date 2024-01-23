@@ -27,6 +27,7 @@
   --step-2: clamp(1.5625rem, 1.2792rem + 1.3736vw, 2.3438rem);/*title text*/
   --step-3: clamp(1.9531rem, 1.5989rem + 1.7176vw, 2.93rem);/*title text*/
   --step-4: clamp(2.4413rem, 1.9986rem + 2.1462vw, 3.6619rem);
+  --step-45: calc((var(--step-4) + var(--step-5)) / 2);
   --step-5: clamp(3.0519rem, 2.4986rem + 2.6824vw, 4.5775rem);
   --step-6: clamp(3.815rem, 3.1235rem + 3.3527vw, 5.7219rem);
   --step-7: clamp(4.7681rem, 3.9035rem + 4.1923vw, 7.1525rem);
@@ -43,10 +44,6 @@ html{
   background-color: var(--backgroundColor);
   font-family: var(--sofia);
   color: var(--black);
-}
-
-body{
-  margin: 1dvh auto;
 }
 p{
   line-height: 150%;
@@ -70,6 +67,138 @@ video{
   transform: scale(1.4);
   margin: 0 auto;
 }
+
+
+
+/* beginning style header*/
+header{
+  display: grid;
+  height: 100dvh;
+  grid-template-columns: 5% 10% 10% 10% 10% 10% 10% 10% 10% 10% 5%;
+  grid-template-rows: 2.5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 2.5%;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  z-index: 10;
+}
+
+.hamburgerMenu{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--backgroundColor);
+  background-image: url(public/svg/hamburger_menu.svg);
+  background-size: cover;
+  grid-column: 10;
+  grid-row: 2/3;
+}
+
+.Sun{
+  background-color: var(--yellow);
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  transform: translate(-60%, -10%);
+  z-index: -1;
+}
+
+.header_title{
+  grid-row: 4/5;
+  grid-column: 2/10;
+  font-size: var(--step-45);
+  font-family: var(--avory);
+  font-weight: var(--weight4);
+  color: var(--purple);
+}
+
+.header_title_Sub{
+  grid-column: 2/10;
+  grid-row: 5/6;
+  color: var(--purple);
+  font-size: var(--step-3);
+  font-family: var(--avory);
+  font-weight: var(--weight4);
+  margin: 5px;
+}
+
+.header_title_text{
+    grid-row: 8/9;
+    grid-column: 2/7;
+    color: var(--purple);
+    font-family: var(--avory);
+    font-size: var(--step-1);
+    font-weight: var(--weight4);
+}
+
+.berlinTower{
+  grid-column: 6/8;
+  grid-row: 6/20;
+}
+
+.parisLouvre{
+  grid-column: 1/12;
+  grid-row: 16/21;
+  place-self: center;
+  transform-origin: center;
+  margin-left: -50dvw;
+  width: 120%;
+}
+
+.belgiumAtomium{
+  grid-column: 7/13;
+  margin-left: 5dvw;
+  grid-row: 15/21;
+  width: 130%;
+}
+
+.wagons{
+  grid-column: 1/11;
+  grid-row: 19/21;
+  width: 520%;
+
+}
+
+
+
+/*end of header*/
+
+.accentBold{
+  color: var(--purple);
+}
+
+.journeyToCaïro{
+  background-color: hotpink;
+}
+
+.data1889{
+  background-color: orange;
+}
+
+.data1930{
+  background-color: blue;
+}
+
+.journeyOfDiscovery{
+  background-color: yellow;
+}
+
+
+.titleh2{
+  color: var(--purple);
+  font-family: var(--avory);
+  font-size: var(--step-3);
+  font-weight: var(--weight4);
+  width: 90%;
+  margin: var(--size2h) auto 0 auto;
+}
+
+
+
+
 
 
 /*pop up */
@@ -245,51 +374,6 @@ body.dialog-open {
   margin: 50px 20%;
 }
 
-
-
-
-
-header{
-  background-color: green;
-}
-
-.accentBold{
-  color: var(--purple);
-}
-
-.journeyToCaïro{
-  background-color: hotpink;
-}
-
-.data1889{
-  background-color: orange;
-}
-
-.data1930{
-  background-color: blue;
-}
-
-.journeyOfDiscovery{
-  background-color: yellow;
-}
-
-
-.titleh2{
-  color: var(--purple);
-  font-family: var(--avory);
-  font-size: var(--step-3);
-  font-weight: var(--weight4);
-  width: 90%;
-  margin: var(--size2h) auto 0 auto;
-}
-.container_popUp_testimonials {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll; /* Enable horizontal scrolling */
-
-}
-
-
 .firstRowExpereince p:nth-child(2){
   width: 90%;
   margin: 20px auto 60px auto;
@@ -344,6 +428,16 @@ header{
   color: var(--purple);
   padding-top: 30px;
 }
+
+.container_popUp_testimonials {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+
+}
+
+/* end of pop up and first experience styling*/
+
 
 /* 
 .--step--2{
