@@ -45,6 +45,9 @@ html{
   font-family: var(--sofia);
   color: var(--black);
 }
+body{
+  overflow-x: hidden;
+}
 p{
   line-height: 150%;
   font-size: var(--step-1);
@@ -76,6 +79,7 @@ header{
   height: 100dvh;
   grid-template-columns: 5% 10% 10% 10% 10% 10% 10% 10% 10% 10% 5%;
   grid-template-rows: 2.5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 2.5%;
+  overflow: hidden;
 }
 
 .logo{
@@ -165,6 +169,11 @@ header{
 
 
 /*end of header*/
+
+.bridge{
+  background-color: orange;
+  overflow: hidden ;
+}
 
 .accentBold{
   color: var(--purple);
@@ -477,11 +486,17 @@ body.dialog-open {
 
 
 /*screens smaller than 375 px*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px){
   .header_title{
     font-size: var(--step-4);
   }
   .berlinTower{
-    width: 80%;
+    width: 90%;
+    grid-row: 7/20;
+  }
+  header{
+    height: 100dvh;
+    width: 100%;
+    background-color: orange;
   }
 }
