@@ -258,10 +258,21 @@
         Each one of these people has ridden on the Orient Express and all had a wonder full time Click one of the
         buttons under the letters to explore their experiences
       </p>
+      <div class="ux_swipe">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"></script>
+
+        <dotlottie-player src="https://lottie.host/99ae6b72-7338-4808-b5ea-0318be697677/ehooSwXqeT.json"
+          background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay
+          class="swipe_animation"></dotlottie-player>
+        <h4>
+          swipe here to the left
+        </h4>
+      </div>
       <div class="container_popUp_testimonials">
         <div class="testimonialReporter">
           <div class="enveloppeStory_container">
-            <img src="./public/svg/Enveloppe.svg " alt=" picture of an envelope" class="enveloppe">
+            <img src="public/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
             <button class="readStory reporter">Read story</button>
           </div>
           <dialog class="dialog--dialogOne">
@@ -272,7 +283,7 @@
                 <div class="PopUp_titleSound">
                   <h2 class="popUpTitle">Timeless Opulence</h2>
                   <div class="soundButton">
-                    <audio id="sound1" src="./public/sounds/testimonial1.wav"></audio>
+                    <audio id="sound1" src="public/sounds/testimonial1.wav"></audio>
                     <div class="playPauseButton">
                       <img src="./public/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
                       <img src="./public/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
@@ -327,7 +338,152 @@
             </div>
           </dialog>
         </div>
+        <!-- 2nd testimonial -->
+        <div class="testimonialVisitor">
+          <div class="enveloppeStory_container">
+            <img src="public/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
+            <button class="readStory visitor">Read story</button>
+          </div>
+          <dialog class="dialog--dialogTwo">
+            <div class="dialogPopUp_divContainer">
+              <div class="popUpcentre">
+                <div class="pupUpCloseVisitor"></div>
+                <img src="./public/assets_dev/Martini.png" alt="illustration of a martiniglass" class="popUpFigure">
+                <div class="PopUp_titleSound">
+                  <h2 class="popUpTitle">Chronicles of Elegance</h2>
+                  <div class="soundButton">
+                    <audio id="sound2" src="public/sounds/testimonial2.wav"></audio>
+                    <div class="playPauseButton">
+                      <img src="./public/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
+                      <img src="./public/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
+                        style="display: none;">
+
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Hello There,
+
+                  I trust this letter finds you well, wrapped in the gentle embrace of life's joys. Today, I am bursting
+                  with excitement to share the tale of my recent sojourn aboard the legendary Orient Express. Allow me
+                  to introduce myself; Eleanor is my name, a wanderer captivated by the allure of timeless journeys and
+                  the enchantment of days gone by.
+
+                  Picture this: our adventure kicked off on the platform of a historic European city. The air was thick
+                  with anticipation as we boarded the Orient Express, its carriages exuding a magnetic charm. The
+                  conductor, a paragon of old-world grace, orchestrated our seamless transition. Bags in the hands of
+                  porters, we were on the brink of setting forth into a realm of enduring elegance and timeless allure.
+
+                  Once aboard, the dining carriage became my sanctuary—a haven of gastronomic delights curated by the
+                  talented Chef Jean Imbert. The rhythmic motion of the train accompanied each delightful morsel,
+                  creating an ambiance of pure delight.
+
+                  As evening descended, our enchanting journey continued in Bar Car '3674.' Cocktails flowed, and the
+                  piano serenaded us into the night. Amidst laughter and the rustle of elegant dresses, the metallic
+                  blue crépe and the harmonious symphony of the night unfolded.
+
+                  Midnight brought with it an unexpected delight brunch. Lobster rolls and truffle club sandwiches
+                  were served in Bar Car '3674,' a sumptuous affair that transcended into the night. The pianist played
+                  on, serenading us until the last reveler decided to bid the night farewell.
+
+                  In the hush that followed the night's revelry, I found solace in the historic cabins, each one
+                  meticulously restored to the grandeur of the 1920s. Crisp sheets embraced me, cocooning me in the
+                  whispers of history.
+
+                  With the dawn of a new day came the aroma of coffee and pastries served in my cabin. A comforting
+                  start, heralding the promise of new beginnings on the horizon.
+
+                  Peering through the windows, nature unveiled its splendors rolling hills and awe-inspiring Alpine
+                  mountains. It was as if the world itself was putting on a show for those fortunate enough to be
+                  aboard.
+
+                  Wandering through the opulent carriages, each with its unique charm, I stumbled upon hidden corners—a
+                  boutique, look-out points—each nook telling a story, inviting exploration and building an appetite for
+                  the wonders yet to be revealed.
+
+                  Lunch unfolded as a lavish affair in the dining carriages. Three decadent courses accompanied spirited
+                  conversation and a touch of Chardonnay. Dining on the Orient Express is a symphony of flavors, an
+                  experience that lingers on the palate.
+
+                  As our journey approached its end in a new city waiting to be explored, the excitement remained
+                  palpable. There was always time for one final cocktail, one last toast to the memories crafted on this
+                  extraordinary voyage.
+
+                  In closing, I offer this glimpse of my adventure, hoping it sparks the same wanderlust that led me to
+                  the Orient Express. Until our paths cross again, may your days be filled with tales as captivating as
+                  this one.
+                </p>
+              </div>
+            </div>
+          </dialog>
+        </div>
+        <!-- 3nd testimonial -->
+        <div class="testimonialChef">
+          <div class="enveloppeStory_container">
+            <img src="public/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
+            <button class="readStory chef">Read story</button>
+          </div>
+          <dialog class="dialog--dialogThree">
+            <div class="dialogPopUp_divContainer">
+              <div class="popUpcentre">
+                <div class="pupUpCloseChef"></div>
+                <img src="./public/assets_dev/cheese.png" alt="illustration of a martiniglass" class="popUpFigure">
+                <div class="PopUp_titleSound">
+                  <h2 class="popUpTitle">Working on the Express</h2>
+                  <div class="soundButton">
+                    <audio id="sound3" src="public/sounds/working.wav"></audio>
+                    <div class="playPauseButton">
+                      <img src="./public/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
+                      <img src="./public/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
+                        style="display: none;">
+
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Hello there, my name is Alex, and I'm honored to share a glimpse into my world working on the Orient
+                  Express.
+
+                  Picture this a culinary odyssey on the iconic Orient Express, where every day felt like a thrilling
+                  adventure in the heart of the kitchen. Under the discerning eye of our remarkable Chef, each moment
+                  brought fresh challenges, turning ordinary kitchen tasks into exciting feats.
+
+                  The kitchen, a realm where even dishwashers were held to the highest standards, became a place where
+                  skills blossomed, and responsibilities grew with expertise a journey that made every workday a blast.
+
+                  Our workplace was a mix of flexibility and fun. Mornings were for surfing, afternoons for rejuvenating
+                  naps, and evenings for crafting culinary delights before stepping out for the night.
+
+                  The diversity of experiences was captivating, especially during those tense dinner rushes that added
+                  an
+                  exhilarating touch to our routine, keeping us on our toes and pushing our limits.
+
+                  What made it truly special was the camaraderie among the kitchen staff. We weren't just colleagues; we
+                  were a tight-knit family navigating dinner rushes together, sharing triumphs and creating memories.
+
+                  In the heart of the Orient Express kitchen a space filled with precision and a bit of chaos I
+                  discovered that excellence in culinary artistry could emerge from the smallest kitchen space. The
+                  challenges of a tiny kitchen became the canvas for creating plates of artistry and finesse.
+
+                  The rush of the dinner service was undeniable, but the satisfaction of contributing to a unique and
+                  historic journey made it all worthwhile. As plates left the kitchen for the Budapest Suite and other
+                  grand carriages, I felt a part of something truly extraordinary.
+
+                  Surrounded by the clatter of pots and pans, the aroma of exquisite cuisine, and the camaraderie of my
+                  kitchen companions, I found more than just a job; it was an adventure filled with flavors, challenges,
+                  and the joy of being part of a team that turned each meal into a work of art.
+
+                  So, if you ever find yourself aboard the Orient Express, savoring a meticulously crafted dish,
+                  remember
+                  the dedicated team behind each culinary masterpiece individuals like me, Alex, weaving magic in the
+                  kitchen and turning every meal into a cherished memory.
+                </p>
+              </div>
+            </div>
+          </dialog>
+        </div>
       </div>
+
     </section>
     <!-- END OF CODE -->
   </main>

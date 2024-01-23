@@ -138,7 +138,7 @@ video{
   width: 90%;
   margin: 5% auto 0% auto;
 }
-.dialog--dialogOne {
+.dialog--dialogOne, .dialog--dialogTwo, .dialog--dialogThree {
   position: fixed;
   top: 0;
   left: 0;
@@ -156,6 +156,15 @@ video{
 .dialog--open {
   transform: translateY(0); /* Move to the top when open */
   animation: slideUp ease 0.5s forwards;
+}
+
+.replayButton{
+  height: 45px;
+  width: 45px;
+  background-color: var(--purple);
+  background-image: url(public/svg/repeat_button.svg);
+  background-size: cover;
+  border-radius: 50%;
 }
 
 @keyframes slideUp {
@@ -184,17 +193,15 @@ body.dialog-open {
   overflow: hidden;
 }
 .readStory{
-  background-image: url(./public/svg/Button.svg);
+  background-image:url(public/svg/Button.svg);
   background-repeat: none;
   background-size: cover;
-  padding:10px 30px;
-  width: 50%;
-  font-family: var(--avory);
-  font-size: var(--step-3);
   border: none;
-  color:var(--purple) ;
+  font-family: var(--avory);
+  color: var(--purple);
+  font-size: var(--step-2);
   font-weight: var(--weight4);
-  background-color: var(--backgroundColor);
+  padding: 10px 30px;
   margin-top: 20px;
 }
 .enveloppeStory_container{
@@ -221,7 +228,7 @@ body.dialog-open {
   transform: rotate(90deg);
   margin: 0 3.5dvw;
 }
-.pupUpClose{
+.pupUpClose, .pupUpCloseVisitor, .pupUpCloseChef{
   width: 60px;
   border-radius: 10px;
   height: 60px;
@@ -236,6 +243,9 @@ body.dialog-open {
   width: 60%;
   margin: 50px 20%;
 }
+
+
+
 
 
 header{
@@ -268,10 +278,48 @@ header{
   font-family: var(--avory);
   font-size: var(--step-3);
   font-weight: var(--weight4);
-  margin-top: var(--size2h);
+  width: 90%;
+  margin: var(--size2h) auto 0 auto;
+}
+.container_popUp_testimonials {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll; /* Enable horizontal scrolling */
 }
 
 
+.firstRowExpereince p:nth-child(2){
+  width: 90%;
+  margin: 20px auto;
+}
+
+.testimonialChef,
+.testimonialVisitor,
+.testimonialReporter {
+  flex: 0 0 auto; 
+  min-width: 40%; 
+  box-sizing: border-box;
+}
+
+.ux_swipe{
+  display: flex;
+  width: 60%;
+  height: 5dvh;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+.ux_swipe .swipe_animation{
+    scale:0.75;
+}
+.ux_swipe h4{
+  width: 300%;
+  font-size: var(--step-1);
+  font-family: var(--avory);
+  font-weight: var(--Weight3);
+  margin-left: -10px;
+}
 
 /* 
 .--step--2{
