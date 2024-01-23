@@ -116,7 +116,7 @@ header{
 }
 
 .header_title_Sub{
-  grid-column: 2/10;
+  grid-column: 2/11;
   grid-row: 5/6;
   color: var(--purple);
   font-size: var(--step-3);
@@ -474,3 +474,14 @@ body.dialog-open {
 .--step-5{
   font-size: var(--step-5);
 } */
+
+
+/*screens smaller than 375 px*/
+@media only screen and (max-width: 375px) {
+  .header_title{
+    font-size: var(--step-4);
+  }
+  .berlinTower{
+    width: 80%;
+  }
+}
