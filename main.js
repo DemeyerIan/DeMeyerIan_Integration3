@@ -11,6 +11,8 @@ let dialogThreeElement = document.querySelector('.dialog--dialogThree'); // Assi
 const closePopupButton = document.querySelector('.pupUpClose');
 const closePopUpVisitor = document.querySelector('.pupUpCloseVisitor');
 const closePopUpChef = document.querySelector('.pupUpCloseChef');
+const menuToggle = document.querySelector('#menuToggle');
+const navChapters = document.querySelectorAll('.navChapter');
 
 
 const updateLottiePlayerSrc = (city) => {
@@ -22,12 +24,23 @@ const updateLottiePlayerSrc = (city) => {
     };
 }
 const init = () => {
-    const buttons = document.querySelectorAll('.map__button');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function () {
-            const city = this.classList[1].split('--')[1];
-            updateLottiePlayerSrc(city);
+    menuToggle.addEventListener('change', function () {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Add the 'dialog-open' class to the body
+            document.body.classList.add('dialog-open');
+        } else {
+            // Remove the 'dialog-open' class from the body
+            document.body.classList.remove('dialog-open');
+        }
+    });
+
+    navChapters.forEach(navChapter => {
+        navChapter.addEventListener('click', function () {
+            // Execute this code when any navChapter is clicked
+            document.body.classList.remove('dialog-open');
+            menuToggle.checked = false;
         });
     });
 

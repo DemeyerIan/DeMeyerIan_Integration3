@@ -363,22 +363,26 @@ header{
   display: none;
 }
 
-
-
+/*end of navigation hamburger
 /*end of header*/
 
+
+
 .bridge{
-  background-color: orange;
   overflow: hidden ;
+}
+
+.bridge_animation{
+  width: 100%;
+  height: 55dvh;
 }
 
 .accentBold{
   color: var(--purple);
+  font-weight: var(--weight4);
+  font-size: 1.2rem;
 }
 
-.journeyToCaïro{
-  background-color: hotpink;
-}
 
 .data1889{
   background-color: orange;
@@ -399,8 +403,8 @@ header{
   font-size: var(--step-3);
   font-weight: var(--weight4);
   width: 90%;
-  margin: var(--size2h) auto 0 auto;
 }
+
 
 
 
@@ -572,7 +576,7 @@ body.dialog-open {
   margin: 50px 20%;
 }
 
-.firstRowExpereince p:nth-child(2){
+.special{
   width: 90%;
   margin: 20px auto 60px auto;
 }
@@ -580,6 +584,13 @@ body.dialog-open {
 .testimonialChef,
 .testimonialVisitor,
 .testimonialReporter {
+  flex: 0 0 auto; 
+  min-width: 40%; 
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.notJSarticle{
   flex: 0 0 auto; 
   min-width: 40%; 
   box-sizing: border-box;
@@ -633,6 +644,82 @@ body.dialog-open {
   overflow-x: scroll; /* Enable horizontal scrolling */
 
 }
+
+
+.notJSSection {
+  display: none;
+  flex-wrap: nowrap;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  padding: 30px;
+}
+
+.js-enabled .notJSSection {
+  display: none;
+}
+
+.js-enabled .container_popUp_testimonials {
+  display: flex;
+  /* Add other styles as needed */
+}
+
+
+/*journey to caïro*/
+
+.journeyToCaïro{
+  width: 90%;
+  margin: 10vh auto;
+}
+
+.journeyToCaïro h2{
+  margin: 0 0 30px 0;
+}
+
+.journeyToCaïro p{
+  margin: 0 0 50px 0;
+}
+
+/* end of journey */
+
+
+
+
+
+
+
+
+
+/*display none javascript enhancement*/
+.notJSarticle {
+  border: var(--purple) solid 3px;
+  height: 60vh;
+  overflow-x: auto; /* Add horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar if needed */
+  border-radius: 20px;
+  width: 90%;
+  margin-right: 10px;
+}
+
+
+
+.notJSarticle figure {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.notJSarticle h5,
+.notJSarticle p {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.notJSh2 {
+  font-family: var(--avory);
+  font-size: var(--step-3);
+  font-weight: var(--weight4);
+  color: var(--purple);
+  margin: 0 0 0 2.7%;
+}
+
 
 /*navigation hamburger*/
 
