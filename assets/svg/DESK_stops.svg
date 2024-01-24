@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{fill:none;stroke:#6C2A5B;stroke-width:8.5039;stroke-miterlimit:10;}
+	.st2{fill:#E7E0D3;stroke:#6C2A5B;stroke-width:8.5039;stroke-miterlimit:10;}
+	.st3{fill:none;}
+	.st4{fill:#6C2A5B;}
+	.st5{font-family:'AvoryIPE-Bl';}
+	.st6{font-size:28.3465px;}
+</style>
+<g id="Laag_1" class="st0">
+</g>
+<g id="Laag_3">
+	<polyline class="st1" points="0,163.9 231.5,171.5 518.5,91.9 576.5,557.5 728.5,708.5 1012.5,825.5 1286.5,766.5 1647.5,979.5 
+		1969,1043 	"/>
+</g>
+<g id="Laag_2">
+	<circle class="st2" cx="231.5" cy="171.5" r="34"/>
+	<circle class="st2" cx="518.5" cy="99.5" r="34"/>
+	<circle class="st2" cx="576.5" cy="557.5" r="34"/>
+	<circle class="st2" cx="728.5" cy="708.5" r="34"/>
+	<circle class="st2" cx="1012.5" cy="825.5" r="34"/>
+	<circle class="st2" cx="1286.5" cy="766.5" r="34"/>
+	<circle class="st2" cx="1647.5" cy="979.5" r="34"/>
+	<rect x="200.6" y="99.2" class="st3" width="137.2" height="44"/>
+	<text transform="matrix(1 0 0 1 200.5967 121.4243)" class="st4 st5 st6">Dijon</text>
+	<rect x="478.6" y="35.2" class="st3" width="137.2" height="44"/>
+	<text transform="matrix(1 0 0 1 478.5967 57.4243)" class="st4 st5 st6">Lausanne</text>
+	<rect x="582.6" y="492.2" class="st3" width="137.2" height="44"/>
+	<text transform="matrix(1 0 0 1 582.5967 514.4243)" class="st4 st5 st6">Milan</text>
+	<rect x="705.6" y="639.2" class="st3" width="137.2" height="44"/>
+	<text transform="matrix(1 0 0 1 705.5967 661.4243)" class="st4 st5 st6">Trieste</text>
+	<rect x="977.6" y="747.2" class="st3" width="137.2" height="44"/>
+	<text transform="matrix(1 0 0 1 977.5967 769.4243)" class="st4 st5 st6">Zagreb</text>
+	<rect x="1244.6" y="698.2" class="st3" width="137.2" height="44"/>
+	<text transform="matrix(1 0 0 1 1244.5967 720.4243)" class="st4 st5 st6">Belgrade</text>
+	<rect x="1621.6" y="909.2" class="st3" width="137.2" height="44"/>
+	<text transform="matrix(1 0 0 1 1621.5967 931.4243)" class="st4 st5 st6">Sofia</text>
+</g>
+</svg>

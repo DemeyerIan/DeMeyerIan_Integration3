@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build --base=/INT3",
-    "preview": "vite preview"
+    "dev": "vite --host --base=/INT3/",
+    "build": "vite build --base=/INT3/",
+    "preview": "vite preview --base=/INT3/"
   },
   "devDependencies": {
     "vite": "^5.0.8",

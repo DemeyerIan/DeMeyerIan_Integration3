@@ -12,35 +12,47 @@
 
 <body>
   <header>
-    <img src="./public/assets_dev/Logo.png" alt="Logo of train world" class="logo">
+    <nav class="navMobile">
+      <div class="navbar">
+        <div class="container nav-container">
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <div class="logo">
+          </div>
+          <div class="menu-items">
+            <div class="menu-items-container">
+              <a href="https://webshoptrainworld.recreatex.be/Exhibitions/Overview?language=en" target="blank"
+                class="tickets">Tickets</a>
+              <ul>
+                <li><a href="#"><span class="nav_chapter">Chapter 1:</span> To caïro</a></li>
+                <li><a href="#"><span class="nav_chapter">Chapter 2:</span> Interactive map</a></li>
+                <li><a href="#"><span class="nav_chapter">Chapter 3:</span> Journey Of Discovery</a></li>
+                <li><a href="#"><span class="nav_chapter">Chapter 4:</span> Unparralleled Luxury</a></li>
+                <li><a href="#"><span class="nav_chapter">Chapter 5:</span> Trough 7 Countries</a></li>
+                <li><a href="#"><span class="nav_chapter">Chapter 6:</span> Bridge Between</a></li>
+                <li><a href="#"><span class="nav_chapter">Chapter 7:</span> Istanbull To Caïro</a></li>
+                <li><a href="#"><span class="nav_chapter">Chapter 8:</span> First Row Experience</a></li>
+              </ul>
+              <div class="socials">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <img src="/assets/svg/Logo.svg" alt="Logo of train world" class="logo">
     <div class="Sun"></div>
-    <div class="hamburgerMenu"></div>
-    <dialog class="hamburger_overlay">
-      <div class="closebutton_container">
-        <button class="tickets">Tickets</button>
-        <button class="nav_close"></button>
-      </div>
-      <ul>
-        <li><a href="#">To caïro</a></li>
-        <li><a href="#">Interactive map</a></li>
-        <li><a href="#">Journey of discoveryo</a></li>
-        <li><a href="#">Unparralleled luxury</a></li>
-        <li><a href="#">Trough 7 countries</a></li>
-        <li><a href="#">east & west</a></li>
-        <li><a href="#">Istanbull to Caïro</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">3d models</a></li>
-      </ul>
-      <div class="socials">
-        <img src="#" alt="icon facebook">
-        <img src="#" alt="icon youtube">
-        <img src="#" alt="icon istagram">
-      </div>
-    </dialog>
-    <img src="./public/assets_dev/PARA/PARA_Berlin_landmark.png" alt="Tower of Berlin" class="berlinTower">
-    <img src="./public/assets_dev/PARA/PARA_Belgium_landmark.png" alt="Atomium in Belgium" class="belgiumAtomium">
-    <img src="./public/assets_dev/PARA/PARA_Paris_Landmark.png" alt="Louvre in Paris" class="parisLouvre">
-    <img src="./public/assets_dev/PARA/PARA_wagons.png" alt="Wagons of the Orient Express" class="wagons">
+    <img src="/assets/svg/berlin.svg" alt="Tower of Berlin" class="berlinTower">
+    <img src="assets/svg/belguim.svg" alt="Atomium in Belgium" class="belgiumAtomium">
+    <img src="assets/svg/louvre.svg" alt="Louvre in Paris" class="parisLouvre">
+    <img src="assets/svg/wagons.svg" alt="Wagons of the Orient Express" class="wagons">
     <h1 class="header_title">The Orient Express</h1>
     <h2 class="header_title_Sub">Luxury at its finest</h2>
     <p class="header_title_text">A story by Train World</p>
@@ -61,12 +73,12 @@
         mixture of fear and excitement
         engulfed me.
       </p>
-      <img src="./public/assets_dev/PiramidesOfGiza.png" alt="Piramids of Giza">
+      <img src="/assets/PiramidesOfGiza.png" alt="Piramids of Giza">
     </section>
     <!-- 1889 -->
     <div class="data1889">
-      <img src="./public/assets_dev/1889Mobile.png" alt="Year 1889">
-      <img src="./public/assets_dev/1889.png" alt="Year 1889" style="display: none;">
+      <img src="/assets/svg/1889.svg" alt="Year 1889">
+      <img src="/assets/svg/1889DESK.svg" alt="Year 1889" style="display: none;">
       <p>Since 1889, one could <span class="accentBold">travel from Paris to Istanbul in just 3 nights twice a
           week</span>. In 1906, the Simplon Tunnel
         opened, cutting through the Alps, allowing the train to smoothly journey from Switzerland to Italy. It seemed
@@ -75,10 +87,10 @@
     </div>
     <!-- 1930 -->
     <div class="data1930">
-      <img src="./public/assets_dev/1930Mobile.png" alt="Year 1930">
-      <img src="./public/assets_dev/1930.png" alt=" Year 1930" style="display:none;">
+      <img src="/assets/svg/1930.svg" alt="Year 1930">
+      <img src="/assets/svg/1930DESK.svg" alt=" Year 1930" style="display:none;">
       <div class="data1930_flexbox">
-        <img src="./public/assets_dev/Georges.png" alt="Foto van Georges Nagelmackers">
+        <img src="/assets/Georges.png" alt="Foto van Georges Nagelmackers">
         <p>
           In the year 1930, we witnessed the <span class="accentBold">heyday of the Simplon Orient-Express.</span>
           Behind me, two gentlemen
@@ -134,7 +146,7 @@
         Nagelmackers'
         Compagnie Internationale des Grands Hôtels.
       </p>
-      <img src="./public/assets_dev/Laguage.png" alt="picture of luggage">
+      <img src="/assets/svg/Laguage.svg" alt="picture of luggage">
     </section>
 
     <!-- Unparralleled luxury -->
@@ -154,21 +166,28 @@
       <p>
         The train consisted of 5 sleeping cars, a dining car, and two baggage cars. No lounge
       </p>
-      <div class="flexbox_swipe">
-        <video src="./public/assets_dev/swipe.mp4" loop muted autoplay></video>
-        <h4>Swipe To the left</h4>
+      <div class="ux_swipe">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"></script>
+
+        <dotlottie-player src="https://lottie.host/99ae6b72-7338-4808-b5ea-0318be697677/ehooSwXqeT.json"
+          background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay
+          class="swipe_animation"></dotlottie-player>
+        <h4>
+          swipe here to the left
+        </h4>
       </div>
       <div class="flexboxCarDetails">
         <div class="flexboxCarDetails__dining">
-          <img src="./public/assets_dev/wagons_specify1.png" alt="illustration of dining wagon">
+          <img src="/assets/svg/wagon1.svg" alt="illustration of dining wagon">
           <button>Dining</button>
         </div>
         <div class="flexboxCarDetails__sleeping">
-          <img src="./public/assets_dev/wagons_specify1.png" alt="illustration of sleeping wagon">
+          <img src="/assets/svg/wagon1.svg" alt="illustration of sleeping wagon">
           <button>sleeping</button>
         </div>
         <div class="flexboxCarDetails__Baggage">
-          <img src="./public/assets_dev/wagons_specify2.png" alt="illustration of baggage wagon">
+          <img src="/assets/svg/wagon2.svg" alt="illustration of baggage wagon">
           <button>Baggage</button>
         </div>
       </div>
@@ -177,7 +196,7 @@
     <!-- Through 7 countries -->
     <section class="sevenCountries">
       <h2 class="titleh2">Trough 7 countries</h2>
-      <img src="./public/assets_dev/Stamp_combo_AE.png" alt="illustration of stamp Athens and Egypt">
+      <img src="/assets/svg/Stamp_combo_AE.svg" alt="illustration of stamp Athens and Egypt">
       <p>
         The journey from Paris to Istanbul took only three days because the train ran day and night. I had expected a
         tiring journey, but the ease and comfort astonished me.<span class="accentBold"> At the
@@ -190,7 +209,7 @@
         In Belgrade, the two cars destined for that journey were uncoupled, immediately replaced by two others: one from
         Berlin and one via Vienna. This gave us the opportunity to enjoy the enchanting view in Belgrade.
       </p>
-      <img src="./public/assets_dev/Stamp_Paris.png" alt="illustration Stamp of Paris">
+      <img src="/assets/svg/ParisStamp.svg" alt="illustration Stamp of Paris">
     </section>
 
     <!--BridgeBewteen-->
@@ -236,21 +255,21 @@
           <h4>
             <span class="counter--one">4</span> Trains
           </h4>
-          <img src="./public/assets_dev/TrainCount.png" alt="Illustration of a locomotive">
+          <img src="/assets/svg/TrainCount.svg" alt="Illustration of a locomotive">
         </div>
         <!-- ship -->
         <div class="ship">
           <h4>
             <span class="counter--two">2</span> Ships
           </h4>
-          <img src="./public/assets_dev/boot.png" alt="Illustration of a ship">
+          <img src="/assets/svg/boot.svg" alt="Illustration of a ship">
         </div>
         <!-- bus -->
         <div class="bus">
           <h4>
             <span class="counter--three">1</span> Bus
           </h4>
-          <img src="./public/assets_dev/Bus.png" alt="Illustration of a bus">
+          <img src="/assets/svg/Bus.svg" alt="Illustration of a bus">
         </div>
       </div>
       <section>
@@ -291,21 +310,21 @@
       <div class="container_popUp_testimonials">
         <div class="testimonialReporter">
           <div class="enveloppeStory_container">
-            <img src="public/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
+            <img src="/assets/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
             <button class="readStory reporter">Read story</button>
           </div>
           <dialog class="dialog--dialogOne">
             <div class="dialogPopUp_divContainer">
               <div class="popUpcentre">
                 <div class="pupUpClose"></div>
-                <img src="./public/assets_dev/camera.png" alt="illustration of a camera" class="popUpFigure">
+                <img src="/assets/svg/camera.svg" alt="illustration of a camera" class="popUpFigure">
                 <div class="PopUp_titleSound">
                   <h2 class="popUpTitle">Timeless Opulence</h2>
                   <div class="soundButton">
-                    <audio id="sound1" src="public/sounds/testimonial1.wav"></audio>
+                    <audio id="sound1" src="/INT3/assets/sounds/testimonial1.wav"></audio>
                     <div class="playPauseButton">
-                      <img src="./public/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
-                      <img src="./public/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
+                      <img src="/assets/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
+                      <img src="/assets/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
                         style="display: none;">
 
                     </div>
@@ -371,21 +390,21 @@
         <!-- 2nd testimonial -->
         <div class="testimonialVisitor">
           <div class="enveloppeStory_container">
-            <img src="public/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
+            <img src="/assets/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
             <button class="readStory visitor">Read story</button>
           </div>
           <dialog class="dialog--dialogTwo">
             <div class="dialogPopUp_divContainer">
               <div class="popUpcentre">
                 <div class="pupUpCloseVisitor"></div>
-                <img src="./public/assets_dev/Martini.png" alt="illustration of a martiniglass" class="popUpFigure">
+                <img src="/assets/svg/MartiniGlass.svg" alt="illustration of a martiniglass" class="popUpFigure">
                 <div class="PopUp_titleSound">
                   <h2 class="popUpTitle">Chronicles of Elegance</h2>
                   <div class="soundButton">
-                    <audio id="sound2" src="public/sounds/testimonial2.wav"></audio>
+                    <audio id="sound2" src="/INT3/assets/sounds/testimonial2.wav"></audio>
                     <div class="playPauseButton">
-                      <img src="./public/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
-                      <img src="./public/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
+                      <img src="/assets/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
+                      <img src="/assets/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
                         style="display: none;">
 
                     </div>
@@ -481,21 +500,21 @@
         <!-- 3nd testimonial -->
         <div class="testimonialChef">
           <div class="enveloppeStory_container">
-            <img src="public/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
+            <img src="/assets/svg/Enveloppe.svg" alt=" picture of an envelope" class="enveloppe">
             <button class="readStory chef">Read story</button>
           </div>
           <dialog class="dialog--dialogThree">
             <div class="dialogPopUp_divContainer">
               <div class="popUpcentre">
                 <div class="pupUpCloseChef"></div>
-                <img src="./public/assets_dev/cheese.png" alt="illustration of a martiniglass" class="popUpFigure">
+                <img src="/assets/svg/kaasrasp.svg" alt="illustration of a martiniglass" class="popUpFigure">
                 <div class="PopUp_titleSound">
                   <h2 class="popUpTitle">Working on the Express</h2>
                   <div class="soundButton">
-                    <audio id="sound3" src="public/sounds/working.wav"></audio>
+                    <audio id="sound3" src="/INT3/assets/sounds/working.wav"></audio>
                     <div class="playPauseButton">
-                      <img src="./public/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
-                      <img src="./public/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
+                      <img src="/assets/svg/play.svg" alt="play button" class="playPauseButton_ContentPlay">
+                      <img src="./assets/svg/pause.svg" alt="play button" class="playPauseButton_ContentPause"
                         style="display: none;">
 
                     </div>
