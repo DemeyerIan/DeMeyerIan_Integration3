@@ -749,6 +749,23 @@ body.dialog-open {
   margin: 0 0 25px 5%;
 }
 
+/* embarking the journey */
+.journeyOfDiscovery{
+  width: 90%;
+  margin: 0px auto 80px auto;
+}
+.journeyOfDiscovery h2{
+  margin-bottom:15px;
+}
+
+.journeyOfDiscovery_2ndP{
+  margin: 40px 0;
+}
+
+.journeyOfDiscovery img{
+  width: 60%;
+  margin: 0 20%;
+}
 
 
 /*display none javascript enhancement*/
