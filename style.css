@@ -199,6 +199,7 @@ header{
   display: block;
   position: relative;
   height: 60px;
+  background-color: ;
 }
 
 .nav-container .checkbox {
@@ -248,17 +249,90 @@ header{
   transition: transform 0.4s ease-in-out;
 }
 
+.menu-items{
+  background-color: var(--backgroundColor);
+  height: 100vh;
+}
+
 .navbar .menu-items {
   padding-top: 120px;
-  background-color: orange;
+
   width: 100vw;
   transition: transform 0.5s ease-in-out;
   transform: translateX(-150%);
 }
 .menu-items-container{
-  background-color: yellow;
-  height: 100vh;
-  margin-top: -3dvh;
+  height: 85vh;
+  margin-top: -5dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-items-container ul{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.menu-items-container ul li{
+  margin-top: 25px;
+}
+
+.menu-items-container ul li a{
+  font-family: var(--avory);
+  font-weight: var(--weight4);
+  font-size: var(--step-2);
+  text-decoration: none;
+  color: var(--purple);
+}
+
+.quickactions{
+  height: 60px;
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.tickets{
+  background-color: var(--purple);
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: var(--avory);
+  font-weight: var(--weight4);
+  font-size: var(--step-2);
+  padding: 15px 0;
+  color: var(--backgroundColor);
+  border-radius: 10px;
+}
+
+.language{
+  border: var(--purple) 3px solid;
+  color: var(--purple);
+  background-color: var(--backgroundColor);
+}
+
+
+.chapterOne{
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.socials{
+  display: flex;
+  width: 40%;
+  margin: 0 0 6dvh 7.5%;
+  justify-content: space-between;
+}
+
+.socials a{
+  flex-basis: 25%;
+}
+
+.nav_chapter{
+  font-size: var(--step-1);
 }
 
 .logo {
@@ -288,11 +362,6 @@ header{
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
 }
-
-.tickets{
-  background-color: var(--backgroundColor);
-}
-
 
 
 
@@ -628,5 +697,14 @@ body.dialog-open {
   }
   .pupUpClose, .pupUpCloseVisitor, .pupUpCloseChef{
     margin: -15dvh 0 0 75dvw;
+  }
+
+  .menu-items-container ul li a{
+    font-family: var(--avory);
+    font-weight: var(--weight4);
+    font-size: var(--step-2);
+  }
+  .socials{
+    margin-top: 3dvh;
   }
 }
