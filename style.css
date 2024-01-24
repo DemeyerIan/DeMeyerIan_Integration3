@@ -165,6 +165,72 @@ header{
   width: 520%;
 
 }
+/*navigation for mobile*/
+.hamburger_overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  background-color: var(--purple);
+  color: var(--backgroundColor);
+  border: none;
+  padding: 0px;
+  transition: transform 0.5s ease;
+  z-index: 999;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.closebutton_container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets{
+  width: 30%;
+  border: none;
+  background-color: var(--backgroundColor);
+  font-family: var(--avory);
+  font-size: var(--step-2);
+  font-weight: var(--weight4);
+  color: var(--purple);
+  border-radius: 10px;
+}
+
+.nav_close{
+  width: 50px;
+  height: 50px;
+  background-image: url(public/svg/close_button.svg);
+  background-size: cover;
+  border: none;
+  border-radius: 10px;
+}
+
+.hamburger_overlay ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger_overlay ul li{
+  margin-top: 25px;
+}
+
+.hamburger_overlay ul li a {
+  text-decoration: none;
+  color: var(--backgroundColor);
+  font-family: var(--avory);
+  font-weight: var(--weight4);
+  font-size: var(--step-3);
+  padding: 40px;
+  width: 100%;
+}
 
 
 
@@ -445,6 +511,8 @@ body.dialog-open {
 
 }
 
+/*navigation hamburger*/
+
 /* end of pop up and first experience styling*/
 
 
@@ -497,6 +565,5 @@ body.dialog-open {
   header{
     height: 100dvh;
     width: 100%;
-    background-color: orange;
   }
 }
