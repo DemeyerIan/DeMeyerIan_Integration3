@@ -384,19 +384,6 @@ header{
 }
 
 
-.data1889{
-  background-color: orange;
-}
-
-.data1930{
-  background-color: blue;
-}
-
-.journeyOfDiscovery{
-  background-color: yellow;
-}
-
-
 .titleh2{
   color: var(--purple);
   font-family: var(--avory);
@@ -680,11 +667,42 @@ body.dialog-open {
 
 /* end of journey */
 
+/* data 1889 */
+.data1889{
+  width: 95%;
+  margin-left: 5%;
+  margin: 80px 0 30px 5%;
+}
+.yearBig{
+  margin-bottom: 10px;
+}
+
+.data1889 p{
+  width: 95%;
+}
 
 
+/* data 1930 */
+.data1930{
+  width: 95%;
+  margin-top: 50px;
+}
 
+.data1930 div{
+  display: flex;
+  justify-content: space-around;
+}
 
+.data1930 div img{
+  height: 100%;
+  align-self: center;
+  width: 35%;
+  flex-shrink: 0; 
+}
 
+.data1930 div p{
+  flex-basis: 55%;
+}
 
 
 
