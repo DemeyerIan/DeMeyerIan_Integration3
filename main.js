@@ -5,12 +5,22 @@ import './style.css'
 const reporterElement = document.querySelector('.reporter');
 const visitorElement = document.querySelector('.visitor');
 const chefElement = document.querySelector('.chef');
+const diningElement = document.querySelector('.button_dining');
+const SleepingElement = document.querySelector('.button_sleeping');
+const BaggageElement = document.querySelector('.button_Baggage');
 let dialogOneElement = document.querySelector('.dialog--dialogOne'); // Assign to the global variable
 let dialogTwoElement = document.querySelector('.dialog--dialogTwo'); // Assign to the global variable
 let dialogThreeElement = document.querySelector('.dialog--dialogThree'); // Assign to the global variable
+let dialogDineElement = document.querySelector('.dialog--dialogTrain1'); // Assign to the global variable
+let dialogSleepElement = document.querySelector('.dialog--dialogTrain2'); // Assign to the global variable
+let dialogBaggageElement = document.querySelector('.dialog--dialogTrain3'); // Assign to the global variable
 const closePopupButton = document.querySelector('.pupUpClose');
 const closePopUpVisitor = document.querySelector('.pupUpCloseVisitor');
 const closePopUpChef = document.querySelector('.pupUpCloseChef');
+const closeDine = document.querySelector('.pupUpCloseDine');
+const closeSleep = document.querySelector('.pupUpClosesleep');
+const closeBaggage = document.querySelector('.pupUpCloseBagage');
+
 const menuToggle = document.querySelector('#menuToggle');
 const navChapters = document.querySelectorAll('.navChapter');
 
@@ -82,6 +92,33 @@ const init = () => {
             document.body.classList.add('dialog-open');
         });
 
+        BaggageElement.addEventListener('click', function () {
+            // Add the 'flex' class to dialogTWo
+            dialogBaggageElement.classList.add('flex');
+            // Optional: Log the classList for debugging
+            console.log(dialogBaggageElement.classList);
+            dialogBaggageElement.classList.add('dialog--open');
+            document.body.classList.add('dialog-open');
+        });
+
+        diningElement.addEventListener('click', function () {
+            // Add the 'flex' class to dialogTWo
+            dialogDineElement.classList.add('flex');
+            // Optional: Log the classList for debugging
+            console.log(dialogDineElement.classList);
+            dialogDineElement.classList.add('dialog--open');
+            document.body.classList.add('dialog-open');
+        });
+
+        SleepingElement.addEventListener('click', function () {
+            // Add the 'flex' class to dialogTWo
+            dialogSleepElement.classList.add('flex');
+            // Optional: Log the classList for debugging
+            console.log(dialogSleepElement.classList);
+            dialogSleepElement.classList.add('dialog--open');
+            document.body.classList.add('dialog-open');
+        });
+
         chefElement.addEventListener('click', function () {
             // Add the 'flex' class to dialogTWo
             dialogThreeElement.classList.add('flex');
@@ -113,12 +150,29 @@ const init = () => {
             closeDialog(dialogOneElement);
         });
 
+        closeBaggage.addEventListener('click', function () {
+            closeDialog(dialogBaggageElement);
+        });
+
+        closePopupButton.addEventListener('click', function () {
+            closeDialog(dialogOneElement);
+        });
+
         closePopUpVisitor.addEventListener('click', function () {
             closeDialog(dialogTwoElement);
         });
 
+
+        closeSleep.addEventListener('click', function () {
+            closeDialog(dialogSleepElement);
+        });
+
         closePopUpChef.addEventListener('click', function () {
             closeDialog(dialogThreeElement);
+        });
+
+        closeDine.addEventListener('click', function () {
+            closeDialog(dialogDineElement);
         });
 
     });
