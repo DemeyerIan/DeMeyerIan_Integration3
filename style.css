@@ -704,6 +704,51 @@ body.dialog-open {
   flex-basis: 55%;
 }
 
+/*interactive map*/
+.interactiveMap{
+
+  overflow: hidden ;
+  margin: 80px 0 30px 0;
+}
+
+
+.animation-container-mobile iframe{
+
+  width: 100%;
+  margin-left: 10px;
+  height: 60vh;
+}
+
+.interactiveMap_buttons{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.map__button{
+  margin-bottom: 10px;
+  width: 48%;
+  background-image: url(/assets/svg/Button.svg);
+  background-size: cover;
+  padding: 10px 0;
+  font-size: var(--step-2);
+  font-family: var(--avory);
+  color: var(--purple);
+  font-weight: var(--weight4);
+  border: none;
+}
+.interactiveMap h2{
+  width: 90%;
+  margin: 0 5% 5px 5%;
+}
+
+.interactiveMap p{
+  width: 90%;
+  margin: 0 0 25px 5%;
+}
+
 
 
 /*display none javascript enhancement*/

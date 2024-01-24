@@ -25,6 +25,23 @@ const updateLottiePlayerSrc = (city) => {
 }
 const init = () => {
 
+    document.querySelector(".istanbull").addEventListener("click", function () {
+        // Change the innerHTML of the .animation-container-mobile
+        document.querySelector(".animation-container-mobile").innerHTML = '<iframe src="https://lottie.host/embed/b7bffbb4-f578-4c3b-821b-4b01928c1194/PRrsZakPDG.json"></iframe>';
+    });
+    document.querySelector(".athens").addEventListener("click", function () {
+        // Change the innerHTML of the .animation-container-mobile
+        document.querySelector(".animation-container-mobile").innerHTML = '<iframe src="https://lottie.host/embed/c072b55d-8fdd-4f78-86de-4711fc03e563/FrmG0hc58R.json"></iframe>';
+    });
+    document.querySelector(".belgrade").addEventListener("click", function () {
+        // Change the innerHTML of the .animation-container-mobile
+        document.querySelector(".animation-container-mobile").innerHTML = '<iframe src="https://lottie.host/embed/dce9ec65-2415-472b-a13f-2ec41b61b16a/KyVBEg3DO2.json"></iframe>';
+    });
+    document.querySelector(".vienna").addEventListener("click", function () {
+        // Change the innerHTML of the .animation-container-mobile
+        document.querySelector(".animation-container-mobile").innerHTML = '<iframe src="https://lottie.host/embed/616cef3a-80ac-4edc-9e17-df7c1eec49fe/Ou8DCxUezB.json"></iframe>';
+    });
+
     menuToggle.addEventListener('change', function () {
         // Check if the checkbox is checked
         if (this.checked) {
