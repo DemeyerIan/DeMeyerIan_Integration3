@@ -679,6 +679,10 @@ body.dialog-open {
 
 }
 
+strong{
+  font-weight: var(--weight4);
+}
+
 
 .notJSSection {
   display: none;
@@ -919,6 +923,57 @@ body.dialog-open {
 
   .sevenCountries_p1{
     margin: 0 0 25px 0;
+  }
+
+  /*New stories*/
+  .newStories{
+    background-color: var(--red);
+    color: var(--purple);
+    width: 90%;
+    margin: 100px auto 20px auto;
+    border: var(--purple) solid 3px;
+  }
+
+  .newStories h2{
+    font-size: var(--step-3);
+    font-family: var(--avory);
+    font-weight: var(--weight4);
+    margin: 20px 5% 10px 5% 
+  }
+
+  .newStories p{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+
+  .hascontainer{
+    margin: 0 5%;
+    width: 90%%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+  }
+
+
+  .hasbutton{
+    background-color: transparent;
+    border: var(--purple) 2px solid;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding: 20px 0;
+    width: 49%;
+    color: var(--purple);
+    font-weight: var(--weight2);
+  }
+
+  .newStories h3{
+    margin: 0px 0 10px 5%;
+    font-family: var(--avory);
+    font-weight: var(--weight4);
+    font-size: var(--step-2);
   }
 
 
