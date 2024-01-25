@@ -8,12 +8,24 @@ const chefElement = document.querySelector('.chef');
 const diningElement = document.querySelector('.button_dining');
 const SleepingElement = document.querySelector('.button_sleeping');
 const BaggageElement = document.querySelector('.button_Baggage');
+
+const frenchElement = document.querySelector('.details_french_class');
+const type18Element = document.querySelector('.Type18Change');
+const germanElement = document.querySelector('.GermanClassChange');
+const britischElement = document.querySelector('.BritischClassChange');
+
 let dialogOneElement = document.querySelector('.dialog--dialogOne'); // Assign to the global variable
 let dialogTwoElement = document.querySelector('.dialog--dialogTwo'); // Assign to the global variable
 let dialogThreeElement = document.querySelector('.dialog--dialogThree'); // Assign to the global variable
 let dialogDineElement = document.querySelector('.dialog--dialogTrain1'); // Assign to the global variable
 let dialogSleepElement = document.querySelector('.dialog--dialogTrain2'); // Assign to the global variable
 let dialogBaggageElement = document.querySelector('.dialog--dialogTrain3'); // Assign to the global variable
+
+let dialogFrenchElement = document.querySelector('.dialog--dialog3dFrench'); // Assign to the global variable
+let dialogType18Element = document.querySelector('.dialog--dialog3dType18'); // Assign to the global variable
+let dialogGermanElement = document.querySelector('.dialog--dialog3dFerman'); // Assign to the global variable
+let dialogBritishElement = document.querySelector('.dialog--dialog3dBritish'); // Assign to the global variable
+
 const closePopupButton = document.querySelector('.pupUpClose');
 const closePopUpVisitor = document.querySelector('.pupUpCloseVisitor');
 const closePopUpChef = document.querySelector('.pupUpCloseChef');
@@ -21,18 +33,18 @@ const closeDine = document.querySelector('.pupUpCloseDine');
 const closeSleep = document.querySelector('.pupUpClosesleep');
 const closeBaggage = document.querySelector('.pupUpCloseBagage');
 
+const closeFrench = document.querySelector('.pupUpClose3dFrench');
+const closeBritish = document.querySelector('.pupUpClose3dBritisch');
+const closeGerman = document.querySelector('.pupUpClose3dGerman');
+const closeType18 = document.querySelector('.pupUpClose3dType18');
+
+const buttons = document.querySelectorAll('.dModels_button_container button');
+const contentDivs = document.querySelectorAll('.changeContent3d');
+
 const menuToggle = document.querySelector('#menuToggle');
 const navChapters = document.querySelectorAll('.navChapter');
 
 
-const updateLottiePlayerSrc = (city) => {
-    const cityUrls = {
-        istanbull: 'https://lottie.host/embed/b7bffbb4-f578-4c3b-821b-4b01928c1194/PRrsZakPDG.json',
-        athens: 'https://lottie.host/embed/c072b55d-8fdd-4f78-86de-4711fc03e563/FrmG0hc58R.json',
-        belgrade: 'https://lottie.host/embed/dce9ec65-2415-472b-a13f-2ec41b61b16a/KyVBEg3DO2.json',
-        vienna: 'https://lottie.host/embed/616cef3a-80ac-4edc-9e17-df7c1eec49fe/Ou8DCxUezB.json',
-    };
-}
 const init = () => {
 
     document.querySelector(".istanbull").addEventListener("click", function () {
@@ -83,12 +95,49 @@ const init = () => {
             openDialog();
         });
 
+
         visitorElement.addEventListener('click', function () {
             // Add the 'flex' class to dialogTWo
             dialogTwoElement.classList.add('flex');
             // Optional: Log the classList for debugging
             console.log(dialogTwoElement.classList);
             dialogTwoElement.classList.add('dialog--open');
+            document.body.classList.add('dialog-open');
+        });
+
+        britischElement.addEventListener('click', function () {
+            // Add the 'flex' class to dialogTWo
+            dialogBritishElement.classList.add('flex');
+            // Optional: Log the classList for debugging
+            console.log(dialogBritishElement.classList);
+            dialogBritishElement.classList.add('dialog--open');
+            document.body.classList.add('dialog-open');
+        });
+
+        germanElement.addEventListener('click', function () {
+            // Add the 'flex' class to dialogTWo
+            dialogGermanElement.classList.add('flex');
+            // Optional: Log the classList for debugging
+            console.log(dialogGermanElement.classList);
+            dialogGermanElement.classList.add('dialog--open');
+            document.body.classList.add('dialog-open');
+        });
+
+        frenchElement.addEventListener('click', function () {
+            // Add the 'flex' class to dialogTWo
+            dialogFrenchElement.classList.add('flex');
+            // Optional: Log the classList for debugging
+            console.log(dialogFrenchElement.classList);
+            dialogFrenchElement.classList.add('dialog--open');
+            document.body.classList.add('dialog-open');
+        });
+
+        type18Element.addEventListener('click', function () {
+            // Add the 'flex' class to dialogTWo
+            dialogType18Element.classList.add('flex');
+            // Optional: Log the classList for debugging
+            console.log(dialogType18Element.classList);
+            dialogType18Element.classList.add('dialog--open');
             document.body.classList.add('dialog-open');
         });
 
@@ -149,6 +198,25 @@ const init = () => {
         closePopupButton.addEventListener('click', function () {
             closeDialog(dialogOneElement);
         });
+
+        closeFrench.addEventListener('click', function () {
+            closeDialog(dialogFrenchElement);
+        });
+
+        closeBritish.addEventListener('click', function () {
+            closeDialog(dialogBritishElement);
+        });
+
+        closeGerman.addEventListener('click', function () {
+            closeDialog(dialogGermanElement);
+        });
+
+        closeType18.addEventListener('click', function () {
+            closeDialog(dialogType18Element);
+        });
+
+
+
 
         closeBaggage.addEventListener('click', function () {
             closeDialog(dialogBaggageElement);
@@ -219,6 +287,23 @@ const init = () => {
     // Event listener for playing/pausing sound in dialogTwoElement
     document.querySelector('.dialog--dialogThree .soundButton').addEventListener('click', function () {
         toggleSound('sound3', this);
+    });
+
+
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', function () {
+            // Remove isActive class from all buttons
+            buttons.forEach(btn => btn.classList.remove('isActive'));
+
+            // Add isActive class to the clicked button
+            this.classList.add('isActive');
+
+            // Hide all content divs
+            contentDivs.forEach(div => div.classList.add('notDisplay'));
+
+            // Show the corresponding content div based on the clicked button
+            contentDivs[index].classList.remove('notDisplay');
+        });
     });
 }
 
