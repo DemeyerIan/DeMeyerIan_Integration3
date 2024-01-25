@@ -1311,4 +1311,7 @@ background-color: transparent;
   .changeContent3d img{
     margin: 0px 0;
   }
+  .popUpTitle{
+    font-size: 1.7rem;
+  }
 }
