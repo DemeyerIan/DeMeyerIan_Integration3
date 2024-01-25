@@ -16,6 +16,7 @@
       <div class="navbar">
         <div class="container nav-container">
           <input class="checkbox" type="checkbox" id="menuToggle" />
+
           <div class="hamburger-lines">
             <span class="line line1"></span>
             <span class="line line2"></span>
@@ -55,7 +56,7 @@
                 </li>
                 <li class="navChapter"><a href="#IstanbullCairo"><span class="nav_chapter">Chapter 7:</span> Istanbull
                     To Caïro</a></li>
-                <li class="navChapter"><a href="#container_counter"><span class="nav_chapter">Chapter 8:</span> First
+                <li class="navChapter"><a href="#FirstExperience"><span class="nav_chapter">Chapter 8:</span> First
                     Row Experience</a>
                 </li>
               </ul>
@@ -320,8 +321,8 @@
     <!-- Through 7 countries -->
     <section class="sevenCountries" id="sevenCountries">
       <h2 class="titleh2">Trough 7 countries</h2>
-      <img src="/assets/svg/Stamp_combo_AE.svg" alt="illustration of stamp Athens and Egypt">
-      <p>
+      <img src="/assets/svg/Stamp_combo_AE.svg" alt="illustration of stamp Athens and Egypt" class="stampAE">
+      <p class="sevenCountries_p1">
         The journey from Paris to Istanbul took only three days because the train ran day and night. I had expected a
         tiring journey, but the ease and comfort astonished me.<span class="accentBold"> At the
           beginning of the journey, the train conductor collected all the necessary documents, sparing us from being
@@ -333,18 +334,20 @@
         In Belgrade, the two cars destined for that journey were uncoupled, immediately replaced by two others: one from
         Berlin and one via Vienna. This gave us the opportunity to enjoy the enchanting view in Belgrade.
       </p>
-      <img src="/assets/svg/ParisStamp.svg" alt="illustration Stamp of Paris">
+      <img src="/assets/svg/ParisStamp.svg" alt="illustration Stamp of Paris" class="stampParis">
     </section>
 
     <!--BridgeBewteen-->
     <section class="bridge" id="bridge">
-      <h2 class="titleh2">A bridge between <br> east and west</h2>
-      <p>
-        Eventually, we reached the
-        final destination of the Simplon Orient-Express: Sirkeci Station in Istanbul. A
-        magical station built in 1890 by the German architect August Jachmund, specifically for the Orient Express. It
-        was a splendid blend of Eastern and Western elements.
-      </p>
+      <div>
+        <h2 class="titleh2">A bridge between <br> east and west</h2>
+        <p>
+          Eventually, we reached the
+          final destination of the Simplon Orient-Express: Sirkeci Station in Istanbul. A
+          magical station built in 1890 by the German architect August Jachmund, specifically for the Orient Express. It
+          was a splendid blend of Eastern and Western elements.
+        </p>
+      </div>
 
       <iframe src="https://lottie.host/embed/22319074-f6bf-4f99-8f42-623bfae71f6e/Sh3d8QtLKb.json"
         class="bridge_animation"></iframe>
@@ -354,19 +357,24 @@
     <dotlottie-player src="https://lottie.host/a3197dca-63e5-4b0e-839f-a256f01f8f37/RnY0LUxjsh.json"
       background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay
       class="dotlottie"></dotlottie-player>
+
+
+
     <!-- Istanball to caïro -->
-    <div class="IstanbullCairo" id="IstanbullCairo">
-      <section>
-        <h2 class="titleh2">From Istanbull to Caïro</h2>
-        <p>
-          After our overnight stay at
-          the Pera Palace Hotel,<span class="accentBold"> we continued our journey with the Taurus Express, </span> also
-          owned by the Compagnie Internationale des Wagons-Lits. This train had two destinations: Baghdad and Cairo.
-          In Aleppo, the train was split for both destinations.
-        </p>
-      </section>
-      <dotlottie-player src="https://lottie.host/e92c2781-8843-4b86-998a-c46a7527720d/7zHKizT3DI.json"
-        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+    <div class="IstanbullOverflowContainer">
+      <div class="IstanbullCairo" id="IstanbullCairo">
+        <section>
+          <h2 class="titleh2">From Istanbull <br>to Caïro</h2>
+          <p>
+            After our overnight stay at
+            the Pera Palace Hotel,<span class="accentBold"> we continued our journey with the Taurus Express, </span>
+            also
+            owned by the Compagnie Internationale des Wagons-Lits. This train had two destinations: Baghdad and Cairo.
+            In Aleppo, the train was split for both destinations.
+          </p>
+        </section>
+        <iframe src="https://lottie.host/embed/dd9a39de-20ba-4113-ad76-95c33f7ec433/UdHx0ne4X2.json"></iframe>
+      </div>
     </div>
 
 
@@ -395,7 +403,7 @@
           <img src="/assets/svg/Bus.svg" alt="Illustration of a bus">
         </div>
       </div>
-      <section>
+      <section class="counter_tekst">
         <h2 class="titleh2">Not comfortable <br> but impressive</h2>
         <p>
           Admittedly, our journey from Istanbul to Cairo was somewhat less comfortable than from Paris to Istanbul. It
@@ -413,8 +421,8 @@
     </div>
 
     <!-- first row experience -->
-    <section class="firstRowExpereince">
-      <h2 class="titleh2">First row experience</h2>
+    <section class="firstRowExpereince" id="FirstExperience">
+      <h2 class="titleh2 headTitle">First row experience</h2>
       <p>
         Each one of these people has ridden on the Orient Express and all had a wonder full time Click one of the
         buttons under the letters to explore their experiences
