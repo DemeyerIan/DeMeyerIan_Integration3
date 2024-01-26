@@ -44,6 +44,12 @@ const contentDivs = document.querySelectorAll('.changeContent3d');
 const menuToggle = document.querySelector('#menuToggle');
 const navChapters = document.querySelectorAll('.navChapter');
 
+// DESK select +read content
+const deskCameraButton = document.querySelector('.DESKCamera');
+const deskMartiniButton = document.querySelector('.DESKMartini');
+const desKaasButton = document.querySelector('.DESKKaas');
+const experienceDiv = document.querySelector('.DESKExperienceInnhher');
+
 
 const init = () => {
     //document.querySelector('html').
@@ -305,6 +311,234 @@ const init = () => {
             // Show the corresponding content div based on the clicked button
             contentDivs[index].classList.remove('notDisplay');
         });
+    });
+
+
+    deskCameraButton.addEventListener('click', function () {
+        // Change the innerHTML of the experienceDiv
+        experienceDiv.innerHTML = `
+        <h5 class="popUpSub ">Introduction</h5>
+        <p class="deskReadp">
+        I feel compelled to share with you the extraordinary tale of an experience that seems to have
+        transcended the boundaries of time and luxury. A journey that unfolded on the Venice
+        Simplon-Orient-Express, a train that boasts of Grand Suites rumored to be among the "most expensive
+        hotel rooms" in the world, per square meter.
+      </p>
+      <h5 class="popUpSub">Grand Suites and Cost</h5>
+      <p class="deskReadp">
+        Imagine, if you will, a journey from Venice to London, where each square meter of the Grand Suites
+        costs a staggering 24,000 euros. It was an escapade that whisked me away from the mundane, as if I
+        held Willy Wonka's golden ticket, granted to me by the esteemed Belmond, the luxury purveyor of this
+        magnificent train.
+      </p>
+      <h5 class="popUpSub">History of Carriage 3309</h5>
+      <p class="deskReadp">
+        The carriage, numbered 3309, whispered tales of yesteryears. A sleeper car from 1926 that once
+        traversed the routes connecting Paris to Bucharest and Munich to Istanbul, marooned in a snowdrift
+        outside Istanbul for five days in 1929, an incident immortalized by Agatha Christie in "Murder on
+        the
+        Orient Express." This carriage now houses the Budapest Suite, a veritable work of art on wheels.
+      </p>
+      <h5 class="popUpSub">Budapest Suite Details</h5>
+      <p class="deskReadp">
+        This carriage now houses the Budapest Suite, a veritable work of art on wheels. Embroidered silks
+        mingled with Lalique glass and Baccarat crystal, creating an ambiance that transcends mere opulence.
+        The mirrors alone, a hefty 27,000 euros each, whispered secrets of the past. In this mobile haven,
+        guests are greeted with Veuve Clicquot Saint Petersbourg Champagne and Steluga Tsar Imperial caviar,
+        enjoyed at their leisure throughout the journey. The suite, adorned with onyx, marble, and Murano
+        glass, promises an experience that lingers like the notes of a cherished melody.
+      </p>
+      <h5 class="popUpSub">Scenic Views</h5>
+      <p class="deskReadp">
+        As the train gently rolled through Europe, the Budapest Suite's modest sofa became my sanctuary.
+        Through the large windows, the snowy Italian Alps, the chalets of Austria's Brenner Pass, the green
+        pastures of Switzerland, and the vineyards of France unfolded like scenes from a vintage film.
+      </p>
+      <h5 class="popUpSub">Culinary Experience</h5>
+      <p class="deskReadp">
+        But the allure wasn't just visual. The culinary symphony orchestrated by Chef Jean Imbert in the
+        six-meter-long, one-meter-wide kitchen was nothing short of magic. From the Champagne breakfast to
+        the
+        four-course dinner, each dish felt like a work of art.
+      </p>
+      <h5 class="popUpSub">Quirks and Conclusion</h5>
+      <p class="deskReadp DESKReadLast">
+        Yet, the journey wasn't without its quirks. The Budapest Suite's spacious ensuite bathroom was a
+        charming but cozy affair. Yet, these were trifles, whispers in the wind when compared to the
+        grandeur
+        of the entire experience.
+
+        The question that lingered in the air, like the echoes of a bygone era, was whether a nearly $28,000
+        journey for a single night could be justified. The answer, my dear, lies not just in the opulence
+        but
+        in the historic tapestry woven through this slow, elegant travel.
+      </p>
+        `;
+    });
+    deskMartiniButton.addEventListener('click', function () {
+        // Change the innerHTML of the experienceDiv
+        experienceDiv.innerHTML = `
+        <h5 class="popUpSub ">Introduction</h5>
+                <p class="deskReadp">
+                  Hello There,
+
+                  I trust this letter finds you well, wrapped in the gentle embrace of life's joys. Today, I am
+                  bursting
+                  with excitement to share the tale of my recent sojourn aboard the legendary Orient Express. Allow me
+                  to introduce myself; Eleanor is my name, a wanderer captivated by the allure of timeless journeys
+                  and
+                  the enchantment of days gone by.
+
+                </p>
+                <h5 class="popUpSub">Boarding and Transition</h5>
+                <p class="deskReadp">
+                  Picture this: our adventure kicked off on the platform of a historic European city. The air was
+                  thick
+                  with anticipation as we boarded the Orient Express, its carriages exuding a magnetic charm. The
+                  conductor, a paragon of old-world grace, orchestrated our seamless transition. Bags in the hands of
+                  porters, we were on the brink of setting forth into a realm of enduring elegance and timeless
+                  allure.
+                </p>
+                <h5 class="popUpSub">Dining Delights</h5>
+                <p class="deskReadp">
+                  Once aboard, the dining carriage became my sanctuary—a haven of gastronomic delights curated by the
+                  talented Chef Jean Imbert. The rhythmic motion of the train accompanied each delightful morsel,
+                  creating an ambiance of pure delight.
+
+                </p>
+                <h5 class="popUpSub">Evening Entertainment</h5>
+                <p class="deskReadp">
+                  As evening descended, our enchanting journey continued in Bar Car '3674.' Cocktails flowed, and the
+                  piano serenaded us into the night. Amidst laughter and the rustle of elegant dresses, the metallic
+                  blue crépe and the harmonious symphony of the night unfolded.
+
+                </p>
+                <h5 class="popUpSub">Midnight Brunch</h5>
+                <p class="deskReadp">
+                  Midnight brought with it an unexpected delight brunch. Lobster rolls and truffle club sandwiches
+                  were
+                  served in Bar Car '3674,' a sumptuous affair that transcended into the night. The pianist played on,
+                  serenading us until the last reveler decided to bid the night farewell.
+
+                </p>
+                <h5 class="popUpSub">Historic Cabins</h5>
+                <p class="deskReadp">
+                  In the hush that followed the night's revelry, I found solace in the historic cabins, each one
+                  meticulously restored to the grandeur of the 1920s. Crisp sheets embraced me, cocooning me in the
+                  whispers of history.
+                </p>
+                <h5 class="popUpSub">Dawn and New Beginnings</h5>
+                <p class="deskReadp">
+                  With the dawn of a new day came the aroma of coffee and pastries served in my cabin. A comforting
+                  start, heralding the promise of new beginnings on the horizon.
+
+                </p>
+                <h5 class="popUpSub">Scenic Views</h5>
+                <p class="deskReadp">
+                  Peering through the windows, nature unveiled its splendors rolling hills and awe-inspiring Alpine
+                  mountains. It was as if the world itself was putting on a show for those fortunate enough to be
+                  aboard.
+
+                </p>
+                <h5 class="popUpSub">Exploration of Carriages</h5>
+                <p class="deskReadp">
+                  Wandering through the opulent carriages, each with its unique charm, I stumbled upon hidden
+                  corners—a boutique, look-out points—each nook telling a story, inviting exploration and building
+                  an appetite for the wonders yet to be revealed.
+
+                </p>
+                <h5 class="popUpSub">Lavish Lunch</h5>
+                <p class="deskReadp">
+                  Lunch unfolded as a lavish affair in the dining carriages. Three decadent courses accompanied
+                  spirited conversation and a touch of Chardonnay. Dining on the Orient Express is a symphony of
+                  flavors, an experience that lingers on the palate.
+
+
+                </p>
+                <h5 class="popUpSub">Conclusion</h5>
+                <p class="deskReadp DESKReadLast">
+                  As our journey approached its end in a new city waiting to be explored, the excitement
+                  remained palpable. There was always time for one final cocktail, one last toast to the
+                  memories crafted on this extraordinary voyage.
+
+                  In closing, I offer this glimpse of my adventure, hoping it sparks the same wanderlust that
+                  led me to the Orient Express. Until our paths cross again, may your days be filled with tales
+                  as captivating as this one.
+
+                </p>
+        `;
+    });
+    desKaasButton.addEventListener('click', function () {
+        // Change the innerHTML of the experienceDiv
+        experienceDiv.innerHTML = `
+        <h5 class="popUpSub">Introduction</h5>
+        <p class="deskReadp">
+          Hello there, my name is Alex, and I'm honored to share a glimpse into my world working on the Orient
+          Express.
+
+        </p>
+        <h5 class="popUpSub">Culinary Odyssey</h5>
+        <p class="deskReadp">
+          Picture this, a culinary odyssey on the iconic Orient Express, where every day felt like a thrilling
+          adventure in the heart of the kitchen. Under the discerning eye of our remarkable Chef, each moment
+          brought fresh challenges, turning ordinary kitchen tasks into exciting feats.
+        </p>
+        <h5 class="popUpSub">Kitchen Dynamics</h5>
+        <p class="deskReadp">
+          The kitchen, a realm where even dishwashers were held to the highest standards, became a place where
+          skills blossomed, and responsibilities grew with expertise—a journey that made every workday a
+          blast.
+        </p>
+        <h5 class="popUpSub">Work-Life Balance</h5>
+        <p class="deskReadp">
+          Our workplace was a mix of flexibility and fun. Mornings were for surfing, afternoons for
+          rejuvenating
+          naps, and evenings for crafting culinary delights before stepping out for the night.
+        </p>
+        <h5 class="popUpSub">Diversity of Experiences</h5>
+        <p class="deskReadp">
+          The diversity of experiences was captivating, especially during those tense dinner rushes that added
+          an exhilarating touch to our routine, keeping us on our toes and pushing our limits.
+        </p>
+        <h5 class="popUpSub">Camaraderie in the Kitchen</h5>
+        <p class="deskReadp">
+          What made it truly special was the camaraderie among the kitchen staff. We weren't just colleagues;
+          we
+          were a tight-knit family navigating dinner rushes together, sharing triumphs and creating memories.
+
+        </p>
+        <h5 class="popUpSub">Discovering Excellence</h5>
+        <p class="deskReadp">
+          In the heart of the Orient Express kitchen—a space filled with precision and a bit of chaos—I
+          discovered that excellence in culinary artistry could emerge from the smallest kitchen space. The
+          challenges of a tiny kitchen became the canvas for creating plates of artistry and finesse.
+
+        </p>
+        <h5 class="popUpSub">Satisfaction in Contribution</h5>
+        <p class="deskReadp">
+          The rush of the dinner service was undeniable, but the satisfaction of contributing to a unique and
+          historic journey made it all worthwhile. As plates left the kitchen for the Budapest Suite and other
+          grand carriages, I felt a part of something truly extraordinary.
+
+        </p>
+        <h5 class="popUpSub">Kitchen Atmosphere</h5>
+        <p class="deskReadp">
+          Surrounded by the clatter of pots and pans, the aroma of exquisite cuisine, and the camaraderie of
+          my
+          kitchen companions, I found more than just a job; it was an adventure filled with flavors,
+          challenges,
+          and the joy of being part of a team that turned each meal into a work of art.
+
+
+        </p>
+        <h5 class="popUpSub">Closing and Invitation</h5>
+        <p class="deskReadp DESKReadLast">
+          So, if you ever find yourself aboard the Orient Express, savoring a meticulously crafted dish,
+          remember the dedicated team behind each culinary masterpiece—individuals like me, Alex, weaving
+          magic
+          in the kitchen and turning every meal into a cherished memory.
+        </p>
+        `;
     });
 }
 

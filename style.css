@@ -1099,7 +1099,7 @@ strong{
   position: relative;
   left: -10%;
 }
-ogo
+
 .bus{
   position: relative;
   left: -25%;
@@ -1340,6 +1340,9 @@ background-color: transparent;
   }
   .model3DSmall{
     display: block;
+  }
+  .hasbutton{
+    font-size: var(--step-0);
   }
 }
 
@@ -1876,7 +1879,202 @@ background-color: transparent;
     display: block;
   }
 
+  .container_counter{
+    width: 90%;
+    height: 80vh;;
+  }
 
+  .DESkcontainer_illustration_counter{
+    margin: 0 0px 0 0;
+    height: 100%;
+    flex: 30%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .DESkcontainer_illustration_counter div{
+    width: 80%; 
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .DESKCounterBus, .DESKCounterShip, .DESKCounterTrain{
+    font-size: var(--step-5);
+  }
+
+  .counter_tekst{
+    align-self: center;
+    flex: 30%;
+
+  }
+
+  .counter_tekst h2{
+    margin-bottom: 30px;
+  }
+
+  .DESKCounterBus_container{
+    margin-left: -20%;
+  }
+  .DESKCounterShip_container{
+    margin-left: -10%;
+  }
+  .DESKCounterTrain_container{
+    margin-left: -5%;
+  }
+
+  .DESkcontainer_illustration_counter div img{
+    width: 68%;
+  }
+
+  .DESkcontainer_illustration_counter div h4 {
+    font-size: var(--step-2);
+    margin-left: 10px;
+    font-family: var(--avory);
+    font-weight: var(--weight4);
+  }
+
+  .bus h4,
+.counter_item_train h4,
+.ship h4 {
+  float: right;
+  margin-right: 20px; 
+  font-family: var(--avory);
+  font-weight: var(--weight4);
+  font-size: var(--step-2);
+}
+
+.counter_item_train h4{
+  position: relative;
+  left: 0px;
+}
+
+
+.bus img {
+  width: 100%;
+  position: relative;
+  left: 0%;
+}
+
+.container_counter{
+  margin: 150px 0;
+}
+
+
+/* first row experience DESK */
+.DESKFirstRow{
+  display: flex;
+  height: 80vh;
+  width: 90%;
+  margin: 100px auto 200px auto;
+  justify-content: space-between;
+}
+
+.DeskFirstRowCon1{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.DeskFirstRowCon2{
+  width: 60%;
+  border: var(--purple) solid 3px;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.DESKSelectedText p{
+    font-family: var(--avory);
+    font-size: var(--step--1);
+    font-weight: var(--weight4);
+}
+.DESKSelectedText{
+  width: 100%;
+  height: 100%;
+}
+
+.DESKExperienceInnhher{
+  width: 100%;
+  height: 94%;
+}
+
+.DeskFirstRowCon1 section p{
+  width: 80%;
+  margin: 10px 0 0 0;
+}
+
+
+
+.DESKplaceholderText_expereince{
+  padding: 20px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94%;
+  height: 100%;
+}
+
+
+.DESKExButtonContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.DESKExButton h3{
+  color: var(--purple);
+  font-family: var(--avory);
+  font-size: var(--step-0);
+  font-weight: var(--weight4);
+  margin-bottom: 20px;
+}
+
+.DESKExButtonContainer button{
+  width: 25%;
+  border: solid 3px var(--purple);
+  background-color: transparent;
+}
+
+.deskReadp{
+  font-family:var(--sofia) !important;
+  font-weight: var(--weight1) !important;
+  margin-left: 3%;
+}
+
+.DESKReadLast{
+  padding-bottom: 3rem;
+}
+
+.DESKflexContainer{
+  display: flex;
+}
+
+.DESK_button_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.dModels_button_container button{
+  font-size: var(--step--1);
+}
+
+.DESK_details_model_container{
+  width: 60%;
+}
+
+.DESK3Dcon1{
+  width: 40%;
+}
+
+.DESK3Dcon2{
+  width: 60%;
+  height: 95%;
+  overflow: scroll;
+}
 
 
 }
