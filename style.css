@@ -934,14 +934,14 @@ strong{
     border: var(--purple) solid 3px;
   }
 
-  .newStories h2{
+  .newStories section h2{
     font-size: var(--step-3);
     font-family: var(--avory);
     font-weight: var(--weight4);
     margin: 20px 5% 10px 5% 
   }
 
-  .newStories p{
+  .newStories section p{
     width: 90%;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -950,7 +950,7 @@ strong{
 
   .hascontainer{
     margin: 0 5%;
-    width: 90%%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
@@ -2076,6 +2076,99 @@ background-color: transparent;
   overflow: scroll;
 }
 
+.hascontainer{
+  width: 50%;
+}
+.newStories{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+.newStories section p{
+  width: 40%;
+  margin: 0 8%;
+
+}
+
+.hascontainer button{
+  width: 30%;
+}
+
+
+/* Navigation hovers */
+
+.chapter1::before {
+  content: "Chapter 1";
+  opacity: 1;
+}
+
+.chapter1:hover::before {
+  content: "Journey To Caïro";
+}
+.chapter2::before {
+  content: "Chapter 2";
+  opacity: 1;
+}
+
+.chapter2:hover::before {
+  content: "Interactive map";
+}
+.chapter3::before {
+  content: "Chapter 3";
+  opacity: 1;
+}
+
+.chapter3:hover::before {
+  content: "Discovery";
+}
+
+.chapter4::before {
+  content: "Chapter 4";
+  opacity: 1;
+}
+
+.chapter4:hover::before {
+  content: "Luxury";
+}
+
+.chapter5::before {
+  content: "Chapter 5";
+  opacity: 1;
+}
+
+.chapter5:hover::before {
+  content: "Countries";
+}
+
+.chapter6::before {
+  content: "Chapter 6";
+  opacity: 1;
+}
+
+.chapter6:hover::before {
+  content: "Bridge between";
+}
+
+.chapter7::before {
+  content: "Chapter 7";
+  opacity: 1;
+}
+
+.chapter7:hover::before {
+  content: "Istanbull To Caïro";
+}
+
+.chapter8::before {
+  content: "Chapter 8";
+  opacity: 1;
+}
+
+.chapter8:hover::before {
+  content: "Experiences";
+}
 
 }
 
