@@ -993,7 +993,7 @@ strong{
   margin: 100px 0 0 0;
 }
 
-.bridge div{
+.bridge section{
   width: 90%;
   margin: 0 auto;
 }
@@ -1216,11 +1216,15 @@ background-color: transparent;
   display: none;
 }
 
-.not_PHONE{
+.notDislays{
   display: none;
 }
 
 .interactiveMap_dropdown{
+  display: none;
+}
+
+.not_PHONE{
   display: none;
 }
 
@@ -1465,6 +1469,7 @@ background-color: transparent;
 
   .DESK_container p{
     width: 130%;
+    margin-left: 5%;
   }
   
   .journeyToCaïro img {
@@ -1670,4 +1675,211 @@ background-color: transparent;
     margin: 10px 0 0 10%
   }
 
+
+  .UnparalleledLuxury{
+    height: 100vh;
+  }
+  .content_unparralleledLuxury{
+    width: 60%;
+    margin: 0 0 0 10%;
+  }
+
+  .content_unparralleledLuxury p{
+    width: 70%;
+    margin: 0 0 30px 5%;
+  }
+
+  .content_unparralleledLuxury h3{
+    font-size: var(--step-1);
+    width: 50%;
+  }
+
+  .ux_swipe{
+    width: 25%;
+  }
+  .ux_swipe h4{
+    font-size: 1.2rem;
+  }
+
+  .flexboxCarDetails{
+    width: 100%;
+  }
+
+
+  .flexboxCarDetails__dining, .flexboxCarDetails__sleeping, .flexboxCarDetails__Baggage{
+    width: 15%;
+  }
+
+  .train_container div button{
+    width: 20%;
+    font-size: var(--step-1);
+  }
+
+  .dialog--dialogOne, .dialog--dialogTwo, .dialog--dialogThree, .dialog--dialogTrain1, .dialog--dialogTrain2, .dialog--dialogTrain3, .dialog--dialog3dFrench, .dialog--dialog3dType18, .dialog--dialog3dFerman, .dialog--dialog3dBritish{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(0%); /* Start offscreen */
+  }
+
+  .dialogPopUp_divContainer{
+    background-color: var(--backgroundColor);
+    height: 80vh;
+    border-radius: 30px;
+    width: 80%;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column; /* Ensure the content stacks vertically */
+  }
+
+  .pupUpClose, .pupUpCloseVisitor, .pupUpCloseChef, .pupUpCloseDine, .pupUpClosesleep, .pupUpCloseBagage, .pupUpClose3dFrench, .pupUpClose3dBritisch, .pupUpClose3dGerman, .pupUpClose3dType18{
+    width: 60px;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    background-image: url(/assets/svg/close_button.svg);
+    background-size: 100% 100%;
+    margin: -4dvh 0 0 74dvw;
+    border: solid 3px var(--purple);
+  }
+
+  .dialog--open {
+    transform: translateY(0); /* Move to the top when open */
+    animation: opacityUp ease 0.5s forwards;
+  }
+  
+  
+  @keyframes opacityUp {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+
+  .dialog--closed{
+    transform: translateY(0);
+    animation:opacityDown ease 0.5s forwards;
+  }
+  @keyframes opacityDown{
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+
+  .popUpCentreTrain img{
+    align-self: flex-start;
+  }
+  
+  .popUpCentreTrain{
+    display: flex;
+  }
+
+  .DESK_titlePic{
+    width: 40%;
+  }
+
+  .DESK_PopUPTrain{
+    width: 60%;
+  }
+
+  .titlePopUpTrain{
+    display: block;
+    margin: 20px;
+  }
+
+  .sevenCountriesDESK{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+.sevenCountriesDESK div{
+    height: 80vh;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sevenCountriesDESK div:nth-child(1) img{
+    width: 80%;
+    margin-left: -20%;
+  }
+
+  .sevenCountriesDESK div:nth-child(2) img{
+    width: 50%;
+    margin-right: -10%;
+  }
+
+  .sevenCountriesDESK div:nth-child(2) p{
+    margin-bottom: 20%;
+  }
+
+  .sevenCountriesDESK section p{
+    margin: 10px 0 0 10%;
+  }
+
+  .bridgeDESKanimation{
+    display: block;
+    width: 120%;
+    height: 120%;
+    margin:-20% 0 0 -13vw;
+  }
+
+  .bridge{
+    height: 90vh;
+    width: 90%;
+    margin: 200px 0 0 10%;
+  }
+  .bridge section{
+    width: 50%;
+    margin: 0 0 0 0;
+  }
+
+  .bridge section p{
+    margin: 20px 0 0 5%;
+  }
+
+  .bridgeBetweenDESK{
+    display: block;
+  }
+  .IstanbullCairo{
+    flex-direction: column;
+    height: 70vh;
+    margin: 100px 0;
+  }
+
+  .IstanbullCairo iframe{
+    width: 100%;
+    height: 120vh;
+    margin-top: -40%;
+  }
+
+  .IstanbullCairo section{
+    width: 40%;
+    margin: 0 0 0 0;
+    align-self: flex-start;
+    margin-left: 10%;
+  }
+
+  .IstanbullCairo section p{
+    width: 100%;
+  }
+
+  .hallo{
+    display: block;
+  }
+
+
+
+
 }
+
+
+
