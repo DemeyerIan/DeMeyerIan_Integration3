@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#E7E0D3">
   <link rel="stylesheet" href="https://use.typekit.net/jjb5zgc.css">
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.36/build/spline-viewer.js"></script>
@@ -13,7 +14,7 @@
 
 <body>
   <header>
-    <nav class="navMobile">
+    <nav class="navMobile not_DESK">
       <div class="navbar">
         <div class="container nav-container">
           <input class="checkbox" type="checkbox" id="menuToggle" />
@@ -45,7 +46,8 @@
                     caïro</a></li>
                 <li class="navChapter"><a href="#interactiveMap"><span class="nav_chapter">Chapter 2:</span> Interactive
                     map</a></li>
-                <li class="navChapter"><a href="#journeyOfDiscovery"><span class="nav_chapter">Chapter 3:</span> Journey
+                <li class="navChapter"><a href="#journeyOfDiscovery"><span class="nav_chapter">Chapter 3:</span>
+                    Journey
                     Of Discovery</a>
                 </li>
                 <li class="navChapter"><a href="#UnparalleledLuxury"><span class="nav_chapter">Chapter 4:</span>
@@ -74,7 +76,26 @@
         </div>
       </div>
     </nav>
-    <img src="/assets/svg/Logo.svg" alt="Logo of train world" class="logo">
+    <nav class="nav_desktop not_PHONE">
+      <img src="/assets/svg/Logo.svg" alt="Logo of train world">
+      <ul>
+        <li><a href="#journeyToCairo">Chapter 1</a></li>
+        <li><a href="#interactiveMap">Chapter 2</a></li>
+        <li><a href="#journeyOfDiscoveryDESK">Chapter 3</a></li>
+        <li><a href="#UnparalleledLuxury">Chapter 4</a></li>
+        <li><a href="#sevenCountries">Chapter 5</a></li>
+        <li><a href="#bridge">Chapter 6</a></li>
+        <li><a href="#IstanbullCairo">Chapter 7</a></li>
+        <li><a href="#FirstExperience">Chapter 8</a></li>
+      </ul>
+      <select name="lang">
+        <option value="eng">ENG</option>
+        <option value="eng">NL</option>
+        <option value="eng">FR</option>
+        <option value="eng">DE</option>
+      </select>
+    </nav>
+    <img src="/assets/svg/Logo.svg" alt="Logo of train world" class="logo not_DESK">
     <div class="Sun"></div>
     <img src="/assets/svg/berlin.svg" alt="Tower of Berlin" class="berlinTower">
     <img src="assets/svg/belguim.svg" alt="Atomium in Belgium" class="belgiumAtomium">
@@ -87,45 +108,52 @@
   <main>
     <!-- Journey to Caïro -->
     <section class="journeyToCaïro" id="journeyToCairo">
-      <h2 class="titleh2 ">
-        Journey To Caïro
-      </h2>
-      <p>
-        I vividly recall the disbelief that nearly overwhelmed me. There we stood, on the enchanting platform of <span
-          class="accentBold">Gare de
-          Lyon in Paris.</span> At that time, I was a young Parisian governess, employed by a wealthy businessman who
-        had to
-        travel to Cairo for a while. And I was to accompany him! It was 9 o'clock in the evening, and within half an
-        hour, the train would depart. <span class="accentBold">From Paris all the way to Cairo in just 6 days!</span> A
-        mixture of fear and excitement
-        engulfed me.
-      </p>
-      <img src="/assets/PiramidesOfGiza.png" alt="Piramids of Giza">
+      <div class="DESK_container">
+        <h2 class="titleh2 ">
+          Journey To Caïro
+        </h2>
+        <p>
+          I vividly recall the disbelief that nearly overwhelmed me. There we stood, on the enchanting platform of <span
+            class="accentBold">Gare de
+            Lyon in Paris.</span> At that time, I was a young Parisian governess, employed by a wealthy businessman who
+          had to
+          travel to Cairo for a while. And I was to accompany him! It was 9 o'clock in the evening, and within half an
+          hour, the train would depart. <span class="accentBold">From Paris all the way to Cairo in just 6 days!</span>
+          A
+          mixture of fear and excitement
+          engulfed me.
+        </p>
+      </div>
+      <img src="/assets/PiramidesOfGiza.webp" alt="Piramids of Giza" class="DESK_year">
     </section>
     <!-- 1889 -->
-    <div class="data1889">
-      <img src="/assets/svg/1889.svg" alt="Year 1889" class="yearBig">
-      <img src="/assets/svg/1889DESK.svg" alt="Year 1889" style="display: none;">
-      <p>Since 1889, one could <span class="accentBold">travel from Paris to Istanbul in just 3 nights twice a
-          week</span>. In 1906, the Simplon Tunnel
-        opened, cutting through the Alps, allowing the train to smoothly journey from Switzerland to Italy. It seemed
-        almost unimaginable at the time.
-      </p>
-    </div>
-    <!-- 1930 -->
-    <div class="data1930">
-      <img src="/assets/svg/1930.svg" alt="Year 1930" class="yearBig">
-      <img src="/assets/svg/1930DESK.svg" alt=" Year 1930" style="display:none;">
-      <div class="data1930_flexbox">
-        <img src="/assets/Georges.png" alt="Foto van Georges Nagelmackers">
-        <p>
-          In the year 1930, we witnessed the <span class="accentBold">heyday of the Simplon Orient-Express.</span>
-          Behind me, two gentlemen
-          enthusiastically discussed the adventure that lay ahead. Although the train
-          originated in Europe, the first sleeper trains were introduced in America. The ingenious Belgian engineer
-          Georges Nagelmackers brought them to Europe, making them more luxurious than ever by founding the Compagnie
-          Internationale des Wagons-Lits.
+    <img src="/assets/svg/Desk_Year.svg" alt="year image" class="BIYear_DESK not_PHONE">
+    <div class="yearDESK_alldata">
+      <div class="data1889">
+        <img src="/assets/svg/1889DESK.svg" alt="Year 1889" class="DESK_year1889 not_PHONE DESKimg1889">
+        <img src="/assets/svg/1889.svg" alt="Year 1889" class="yearBig not_DESK">
+        <p>Since 1889, one could <span class="accentBold">travel from Paris to Istanbul in just 3 nights twice a
+            week</span>. In 1906, the Simplon Tunnel
+          opened, cutting through the Alps, allowing the train to smoothly journey from Switzerland to Italy. It seemed
+          almost unimaginable at the time.
         </p>
+      </div>
+      <!-- 1930 -->
+      <img src="/assets/Georges.webp" alt="Foto van Georges Nagelmackers" class="not_PHONE year_img">
+      <div class="data1930">
+        <img src="/assets/svg/1930.svg" alt="Year 1930" class="yearBig not_DESK">
+        <img src="/assets/svg/1930DESK.svg" alt=" Year 1930" class="DESK_year1889 not_PHONE DESKimg1930">
+        <div class="data1930_flexbox">
+          <img src="/assets/Georges.webp" alt="Foto van Georges Nagelmackers" class="NOT_DESK">
+          <p>
+            In the year 1930, we witnessed the <span class="accentBold">heyday of the Simplon Orient-Express.</span>
+            Behind me, two gentlemen
+            enthusiastically discussed the adventure that lay ahead. Although the train
+            originated in Europe, the first sleeper trains were introduced in America. The ingenious Belgian engineer
+            Georges Nagelmackers brought them to Europe, making them more luxurious than ever by founding the Compagnie
+            Internationale des Wagons-Lits.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -135,7 +163,7 @@
         <h2 class="titleh2">Found out which route <br> Orient Express took.</h2>
         <p>Choose a final destination on one of the buttons and discover the route the Orient Express did.</p>
         <!-- MOBILE -->
-        <div class="mobile_interactiveMap">
+        <div class="mobile_interactiveMap not_DESK">
           <div class="interactiveMap_buttons"> <!-- using css grid to position -->
             <button class="map__button istanbull">Istanbull</button>
             <button class="map__button athens">Athens</button>
@@ -149,9 +177,37 @@
           class="changeSrc"></iframe>
       </div>
 
-      <!--DESK-->
-      <div class="interactiveMap_dropdown" style="display: none;">
+
+    </div>
+
+    <!--DESK-->
+    <div class="interactiveMap_dropdown">
+      <div class="interactiveMap_dropdown_left">
         <!-- Asking on consukt how i could do this -->
+        <h2 class="titleh2">Found out which route <br> Orient Express took.</h2>
+        <p>Choose a final destination on one of the buttons and discover the route the Orient Express did.</p>
+        <div>
+          <div class="seletor_container">
+            <label>Paris</label>
+            <img src="/assets/svg/arrow_toRight.svg" alt="arrow to right">
+            <select id="dropDown" onchange="updateMenu()">
+
+            </select>
+          </div>
+
+
+          <div class="container">
+            <div class="step-list">
+              <ul class="steplist">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="interactiveMap_dropdown_right">
+        <iframe src="https://lottie.host/embed/e034e6a8-f3e7-4bd8-b001-b0407cf6933b/NP9kXVQDWY.json"
+          class="changeSrc"></iframe>
       </div>
     </div>
 
@@ -176,6 +232,30 @@
       </p>
       <img src="/assets/svg/Laguage.svg" alt="picture of luggage">
     </section>
+
+    <!-- DESK -->
+    <div id="journeyOfDiscoveryDESK" class="DESKEmberking not_PHONE">
+      <section class="DESKEmberking_section">
+        <h2 class="titleh2">
+          Embarking a journey <br> of discovery
+        </h2>
+        <p>
+          The platform was bustling, making it all the more intriguing. Even with the most vivid imagination, one could
+          not fathom <span class="accentBold">the diverse group of people gathering! Diplomats and statesmen, stars and
+            aristocrats, artists and writers, </span> even Eastern traders and Indian Maharajas heading home.
+        </p>
+        <p class="journeyOfDiscovery_2ndP">
+          Our luggage was carefully loaded into baggage cars, and an attendant led us to our compartments. Ready to
+          depart! <span class="accentBold">First stop: Dijon, then Lausanne, Milan, Venice, Trieste, Zagreb, Belgrade,
+            and
+            Sofia, finally arriving in Istanbul.</span> There, we enjoyed an overnight stay at the Pera Palace Hotel,
+          built by Georges
+          Nagelmackers'
+          Compagnie Internationale des Grands Hôtels.
+        </p>
+      </section>
+      <img src="/assets/svg/Laguage.svg" alt="picture of luggage" class="DESKEmberking_img">
+    </div>
 
     <!-- Unparralleled luxury -->
     <section class="UnparalleledLuxury" id="UnparalleledLuxury">
@@ -320,7 +400,7 @@
     </section>
 
     <!-- Through 7 countries -->
-    <section class="sevenCountries" id="sevenCountries">
+    <section class="sevenCountries not_DESK" id="sevenCountries">
       <h2 class="titleh2">Trough 7 countries</h2>
       <img src="/assets/svg/Stamp_combo_AE.svg" alt="illustration of stamp Athens and Egypt" class="stampAE">
       <p class="sevenCountries_p1">
@@ -351,7 +431,7 @@
       </div>
 
       <iframe src="https://lottie.host/embed/22319074-f6bf-4f99-8f42-623bfae71f6e/Sh3d8QtLKb.json"
-        class="bridge_animation"></iframe>
+        class="bridge_animation not_DESK"></iframe>
     </section>
 
     <!-- video scrolltriger -->
@@ -374,7 +454,8 @@
             In Aleppo, the train was split for both destinations.
           </p>
         </section>
-        <iframe src="https://lottie.host/embed/dd9a39de-20ba-4113-ad76-95c33f7ec433/UdHx0ne4X2.json"></iframe>
+        <iframe src="https://lottie.host/embed/dd9a39de-20ba-4113-ad76-95c33f7ec433/UdHx0ne4X2.json"
+          class="not_DESK"></iframe>
       </div>
     </div>
 
@@ -422,7 +503,7 @@
     </div>
 
     <!-- first row experience -->
-    <section class="firstRowExpereince" id="FirstExperience">
+    <section class="firstRowExpereince not_DESK" id="FirstExperience">
       <h2 class="titleh2 headTitle">First row experience</h2>
       <p>
         Each one of these people has ridden on the Orient Express and all had a wonder full time Click one of the
@@ -977,25 +1058,25 @@
         </button>
       </div>
       <div class="changeContent3d  frenchClassChange">
-        <img src="/assets/3d_models/Frens_Class.png" alt="train model of French class">
+        <img src="/assets/3d_models/Frens_Class.webp" alt="train model of French class">
         <button class="details_french_class detailButton3d">
           See details
         </button>
       </div>
       <div class="changeContent3d  Type18Change notDisplay">
-        <img src="/assets/3d_models/Frens_Class.png" alt="Type 18 locomotive">
+        <img src="/assets/3d_models/Frens_Class.webp" alt="Type 18 locomotive">
         <button class="details_french_class detailButton3d">
           See details
         </button>
       </div>
       <div class="changeContent3d  GermanClassChange notDisplay">
-        <img src="/assets/3d_models/Frens_Class.png" alt="German Class">
+        <img src="/assets/3d_models/Frens_Class.webp" alt="German Class">
         <button class="details_french_class detailButton3d">
           See details
         </button>
       </div>
       <div class="changeContent3d  BritischClassChange notDisplay">
-        <img src="/assets/3d_models/britisch_Class.jpg" alt="Britisch class">
+        <img src="/assets/3d_models/britisch_Class.webp" alt="Britisch class">
         <button class="details_french_class detailButton3d">
           See details
         </button>
@@ -1009,6 +1090,11 @@
               <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.35/build/spline-viewer.js"></script>
               <spline-viewer hint loading-anim-type="spinner-small-dark"
                 url="https://prod.spline.design/CH7N7nQLcsJDgrT8/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="model3DSmall">
+              <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.36/build/spline-viewer.js"></script>
+              <spline-viewer hint loading-anim-type="spinner-small-dark"
+                url="https://prod.spline.design/5-MvPiPgG8uMkowT/scene.splinecode"></spline-viewer>
             </div>
             <img src="/assets/3d_models/3d_icon.svg" alt="3d Icon" class="icon3d">
             <h5 class="popUpSub">French Class A-241</h5>
@@ -1182,6 +1268,10 @@
               <spline-viewer hint loading-anim-type="spinner-small-dark"
                 url="https://prod.spline.design/q-UgKPcVW2nc4v4e/scene.splinecode"></spline-viewer>
             </div>
+            <div class="model3DSmall">
+              <spline-viewer hint loading-anim-type="spinner-small-dark"
+                url="https://prod.spline.design/q-UgKPcVW2nc4v4e/scene.splinecode"></spline-viewer>
+            </div>
             <img src="/assets/3d_models/3d_icon.svg" alt="3d Icon" class="icon3d">
             <h5 class="popUpSub">Britisch Class 67</h5>
             <p class="popUpBodyCopy par3d">
@@ -1263,6 +1353,7 @@
     <!-- END OF CODE -->
   </main>
   <script type="module" src="/main.js"></script>
+  <script src="/dropdownScript.js"></script>
 </body>
 
 </html>

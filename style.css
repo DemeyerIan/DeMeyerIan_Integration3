@@ -764,7 +764,7 @@ strong{
 
 
 .animation-container-mobile iframe{
-
+  background-image: url(/assets/svg/loadingIconPhone.svg);
   width: 100%;
   margin-left: 10px;
   height: 60vh;
@@ -1212,6 +1212,19 @@ background-color: transparent;
   display: none;
 }
 
+.model3DSmall{
+  display: none;
+}
+
+.not_PHONE{
+  display: none;
+}
+
+.interactiveMap_dropdown{
+  display: none;
+}
+
+
 /*navigation hamburger*/
 
 /* end of pop up and first experience styling*/
@@ -1262,6 +1275,7 @@ background-color: transparent;
   .berlinTower{
     width: 90%;
     grid-row: 7/20;
+    
   }
   header{
     height: 100dvh;
@@ -1314,4 +1328,346 @@ background-color: transparent;
   .popUpTitle{
     font-size: 1.7rem;
   }
+  .stampParis{
+    margin-top:20px ;
+  }
+  .model3D{
+    display: none;
+  }
+  .model3DSmall{
+    display: block;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px){
+  .not_DESK{
+    display: none;
+  }
+
+  p{
+    font-size: var(--step--1);
+  }
+
+  .accentBold{
+    font-size: var(--step-0);
+  }
+
+  /*begin header*/
+  .nav_desktop{
+    display: flex;
+    width: 100%;
+    grid-column: 1/13;
+    grid-row: 1/4;
+    margin: 20px auto;
+    justify-content:space-between;
+    max-width: 1700px;
+
+  }
+
+  .nav_desktop img{
+    flex-basis: 6%;
+    max-width: 6%;
+    flex-shrink: 0;
+  }
+
+  .nav_desktop ul{
+    display: flex;
+    flex-basis: 70%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav_desktop ul li a{
+    font-size: var(--step-0);
+    color: var(--purple);
+    font-family: var(--avory);
+    font-weight: var(--weight4);
+    text-decoration: none;
+  }
+
+  .nav_desktop select{
+    background-color: var(--backgroundColor);
+    width: 8%;
+    height: 60%;
+    margin: 1% 10px 1% 0;
+    border: var(--purple) 2px solid;
+    color: var(--purple);
+    font-family: var(--avory);
+    font-weight: var(--Weight3);
+    font-size: var(--step-0);
+  }
+
+  .header_title{
+    grid-column: 2/10;
+    grid-row: 6/7;
+  }
+
+
+  .Sun{
+    transform: translate(0%, 0%);
+    position: relative;
+    grid-column: 5/9;
+    grid-row: 1/9;
+    justify-self: center; /* Center horizontally within the grid area */
+    align-self: center; 
+  }
+
+  .parisLouvre{
+    grid-column: 3/8;
+    grid-row: 10/21;
+    margin-left: 0dvw;
+    width: 50rem;
+  }
+
+  .header_title_Sub{
+    grid-column: 2/6;
+    grid-row: 7/8;
+    margin-top: 20px;
+  }
+
+  .header_title_text{
+    grid-column: 2/6;
+    grid-row: 10/11;
+  }
+
+  .berlinTower{
+    grid-column: 7/8;
+    grid-row: 1/10;
+    width: 70%;
+    height: 90vh;
+  }
+
+  .belgiumAtomium{
+    grid-column: 7/12;
+    grid-row: 6/18;
+    width: 38rem;
+    margin-left: 3rem;
+  }
+
+  .wagons{
+    grid-column: 1/4;
+    grid-row: 19/22;
+    width: 100rem;
+  }
+  /*einde header DESK*/
+  .journeyToCaïro {
+    display: flex;
+    width: 80%;
+    height: 60vh;
+  }
+  
+  .DESK_container {
+    overflow: visible;
+    width: 40%;
+  }
+
+  .DESK_container p{
+    width: 130%;
+  }
+  
+  .journeyToCaïro img {
+    width: 60%;
+    align-self: flex-end; /* Align the image to the bottom of the container */
+  }
+
+
+  .data1889{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    flex-basis: 40%;
+  }
+
+  .yearDESK_alldata{
+
+    width: 80%;
+    margin: -14% auto 0 auto;
+    display: flex;
+  }
+
+  .data1930{
+    margin-top: 0px;
+    width: 100%;
+    margin: 0 0 0 0;
+    flex-basis: 40%;
+  }
+
+  .BIYear_DESK{
+    display: block;
+    width: 80%;
+    margin: -11% auto 0 auto;
+  }
+
+  .NOT_DESK{
+    display: none;
+  }
+
+  .data1930 div{
+    display: block;
+    margin-top: 50%;
+    margin-left: 15%;
+  }
+
+  .year_img{
+    display: block;
+    flex-basis: 20%;
+    margin-top: 5%;
+  }
+
+  .interactiveMap{
+    display: none;
+  }
+
+  .interactiveMap_dropdown{
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    margin: 100px auto;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin-top: 30px;
+  }
+  .container .step-list .caption {
+    color: var(--purple);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .container .step-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+  .container .step-list ul .step-list-item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+  .container .step-list ul .step-list-item {
+    padding-left: 25px;
+    position: relative;
+  }
+  .container .step-list ul .step-list-item:before {
+    width: 13px;
+    height: 13px;
+    border: 2px solid var(--purple);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 3px;
+  }
+  .container .step-list ul .step-list-item:first-child:before {
+    /* Override background color for the first-child */
+    background-color: var(--red); /* Set the background color to red */
+}
+  .container .step-list ul .step-list-item:after {
+    width: 0px;
+    height: calc(100% - 16px);
+    
+    content: "";
+    position: absolute;
+    margin-left: -18px;
+    top: 18px;
+  }
+
+  .container .step-list ul .step-list-item:not(:last-child):after {
+    border: 1.5px solid var(--purple);
+}
+  .container .step-list ul .step-list-item .item-caption {
+    color: var(--purple);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .container .step-list ul .step-list-item .item-sub {
+    color: var(--purple);
+    padding-top: 3px;
+    font-size: 14px;
+  }
+
+  .interactiveMap_dropdown_left{
+    width: 40%;
+  }
+
+  .interactiveMap_dropdown_left p{
+    width: 90%;
+    margin: 20px 0 50px 0;
+  }
+
+  .interactiveMap_dropdown_right{
+    width: 60%;
+    overflow: hidden;
+    background-image: url(/assets/svg/loadingIconDESK.svg);
+  }
+
+  .interactiveMap_dropdown_right iframe{
+    width: 120%;  
+    height: 100%;
+  }
+
+  .seletor_container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .seletor_container img{
+    width: 70%;
+    margin: 0 20px;
+  }
+
+  .seletor_container label{
+    font-family: var(--avory);
+    font-weight: var(--weight4);
+    color: var(--purple);
+    font-size: var(--step-1);
+  }
+
+  #dropDown{
+    background-color: var(--backgroundColor);
+    border: 2px var(--purple) solid;
+    font-size: var(--step-1);
+    font-family: var(--avory);
+    font-weight: var(--weight4);
+    color: var(--purple);
+  }
+
+
+  .journeyOfDiscovery{
+    display: none;
+  }
+
+  .DESKEmberking{
+    display: flex;
+    background-image: url(/assets/svg/DESK_stops.svg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .DESKEmberking_img{
+    align-self: flex-end;
+    width: 25%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+  }
+
+  .DESKEmberking_section{
+    width: 50%;
+    margin: 3% 0 0 10%;
+  }
+
+  .DESKEmberking_section p{
+    margin: 10px 0 0 10%
+  }
+
 }

@@ -46,6 +46,7 @@ const navChapters = document.querySelectorAll('.navChapter');
 
 
 const init = () => {
+    //document.querySelector('html').
 
     document.querySelector(".istanbull").addEventListener("click", function () {
         // Change the innerHTML of the .animation-container-mobile

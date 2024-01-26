@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 467 467" style="enable-background:new 0 0 467 467;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#5C2A5B;}
+</style>
+<g>
+	<rect x="205.9" y="235.9" class="st0" width="11.4" height="11.4">
+	
+		<animate  accumulate="none" additive="replace" attributeName="fill" begin="0s" calcMode="discrete" dur="1s" fill="remove" keyTimes="0;0.125;1" repeatCount="indefinite" restart="always" values="#ed4a4a;#5c2a5b;#5c2a5b">
+		</animate>
+	</rect>
+	<rect x="217.8" y="235.9" class="st0" width="11.4" height="11.4">
+	
+		<animate  accumulate="none" additive="replace" attributeName="fill" begin="0.125s" calcMode="discrete" dur="1s" fill="remove" keyTimes="0;0.125;1" repeatCount="indefinite" restart="always" values="#ed4a4a;#5c2a5b;#5c2a5b">
+		</animate>
+	</rect>
+	<rect x="229.8" y="235.9" class="st0" width="11.4" height="11.4">
+	
+		<animate  accumulate="none" additive="replace" attributeName="fill" begin="0.25s" calcMode="discrete" dur="1s" fill="remove" keyTimes="0;0.125;1" repeatCount="indefinite" restart="always" values="#ed4a4a;#5c2a5b;#5c2a5b">
+		</animate>
+	</rect>
+	<rect x="205.9" y="247.8" class="st0" width="11.4" height="11.4">
+	
+		<animate  accumulate="none" additive="replace" attributeName="fill" begin="0.875s" calcMode="discrete" dur="1s" fill="remove" keyTimes="0;0.125;1" repeatCount="indefinite" restart="always" values="#ed4a4a;#5c2a5b;#5c2a5b">
+		</animate>
+	</rect>
+	<rect x="229.8" y="247.8" class="st0" width="11.4" height="11.4">
+	
+		<animate  accumulate="none" additive="replace" attributeName="fill" begin="0.375s" calcMode="discrete" dur="1s" fill="remove" keyTimes="0;0.125;1" repeatCount="indefinite" restart="always" values="#ed4a4a;#5c2a5b;#5c2a5b">
+		</animate>
+	</rect>
+	<rect x="205.9" y="259.8" class="st0" width="11.4" height="11.4">
+	
+		<animate  accumulate="none" additive="replace" attributeName="fill" begin="0.75s" calcMode="discrete" dur="1s" fill="remove" keyTimes="0;0.125;1" repeatCount="indefinite" restart="always" values="#ed4a4a;#5c2a5b;#5c2a5b">
+		</animate>
+	</rect>
+	<rect x="217.8" y="259.8" class="st0" width="11.4" height="11.4">
+	
+		<animate  accumulate="none" additive="replace" attributeName="fill" begin="0.625s" calcMode="discrete" dur="1s" fill="remove" keyTimes="0;0.125;1" repeatCount="indefinite" restart="always" values="#ed4a4a;#5c2a5b;#5c2a5b">
+		</animate>
+	</rect>
+	<rect x="229.8" y="259.8" class="st0" width="11.4" height="11.4">
+	
+		<animate  accumulate="none" additive="replace" attributeName="fill" begin="0.5s" calcMode="discrete" dur="1s" fill="remove" keyTimes="0;0.125;1" repeatCount="indefinite" restart="always" values="#ed4a4a;#5c2a5b;#5c2a5b">
+		</animate>
+	</rect>
+</g>
+</svg>
