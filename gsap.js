@@ -200,10 +200,103 @@ const init = () => {
         LottieScrollTrigger({
             target: "#animationWindow", // Replace with your element's selector
             path: "/INT3/assets/json/animation.json",
-            speed: "medium",
-            scrub: 2,
+            speed: "slow",
+            // markers: true,
+            start: "top top",
+            end: "bottom top",
+            scrub: 3,
             // Add other ScrollTrigger options if needed
         });
+
+        /*tunnel animation*/
+        let tlTunnel = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".IstanbullCairo",
+                // markers: true,
+                start: "top top",
+                end: "bottom top",
+                scrub: 2,
+                reverse: true,
+                pin: true,
+            }
+        });
+
+        // Animate tunnelMobile
+        tlTunnel.fromTo(".tunnelMobile",
+            { y: '100%', opacity: 0 }, // Start from off-screen (below) with opacity 0
+            { y: '0%', opacity: 1 } // End at original position with opacity 1
+        );
+
+        // Animate gsapANTunnel
+        tlTunnel.fromTo(".gsapANTunnel",
+            { x: '-100%', opacity: 0 }, // Start from off-screen (above) with opacity 0
+            { x: '0%', opacity: 1 } // End at original position with opacity 1
+        );
+
+
+
+        // Counter animations
+        let tlCounter = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".container_counter",
+                // markers: true,
+                start: "-5% top",
+                end: "120% top",
+                scrub: 0,
+                reverse: true,
+                pin: true,
+            }
+        });
+
+        // Set the initial state of the elements
+        gsap.set([".counter_item_train", ".ship", ".bus"], { opacity: 0, x: -100 });
+
+        // Animate the .counter_item_train element
+        tlCounter.to(".counter_item_train", { duration: 1, opacity: 1, x: 0 });
+
+        // Animate the counter .counter--one from 0 to 4
+        tlCounter.fromTo(".counter--one", { innerText: 0 }, {
+            duration: 1, innerText: 4, ease: "none", onUpdate: function () {
+                document.querySelector(".counter--one").innerText = Math.round(this.targets()[0].innerText);
+            }
+        });
+
+        // Animate the .ship element
+        tlCounter.to(".ship", { duration: 1, opacity: 1, x: 0 });
+
+        // Animate the counter .counter--two from 0 to 2
+        tlCounter.fromTo(".counter--two", { innerText: 0 }, {
+            duration: 1, innerText: 2, ease: "none", onUpdate: function () {
+                document.querySelector(".counter--two").innerText = Math.round(this.targets()[0].innerText);
+            }
+        });
+
+        // Animate the .bus element
+        tlCounter.to(".bus", { duration: 1, opacity: 1, x: 0 });
+
+        // Animate the counter .counter--three from 0 to 1
+        tlCounter.fromTo(".counter--three", { innerText: 0 }, {
+            duration: 1, innerText: 1, ease: "none", onUpdate: function () {
+                document.querySelector(".counter--three").innerText = Math.round(this.targets()[0].innerText);
+            }
+        });
+
+
+
+        /*footer*/
+        let tlfooter = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".newStories",
+                // markers: true,
+                start: "top 80%",
+                end: "70% 90%",
+                scrub: 0,
+                reverse: true,
+            }
+        });
+
+
+        tlfooter.add(gsap.fromTo(".newStories", { opacity: 0, y: 40 }, { opacity: 1, duration: 1, y: 0 }));
 
     });
 }
