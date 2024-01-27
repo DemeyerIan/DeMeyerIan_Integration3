@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#E7E0D3">
   <link rel="stylesheet" href="https://use.typekit.net/jjb5zgc.css">
-  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.36/build/spline-viewer.js"></script>
   <title>The orient Express</title>
 </head>
@@ -146,7 +147,7 @@
           <img src="/assets/svg/1930.svg" alt="Year 1930" class="yearBig not_DESK gsapMOB1930">
           <img src="/assets/svg/1930DESK.svg" alt=" Year 1930" class="DESK_year1889 not_PHONE DESKimg1930">
           <div class="data1930_flexbox">
-            <img src="/assets/Georges.webp" alt="Foto van Georges Nagelmackers" class="NOT_DESK">
+            <img src="/assets/Georges.webp" alt="Foto van Georges Nagelmackers" class="NOT_DESK gsapAnimationGeorges">
             <p>
               In the year 1930, we witnessed the <span class="accentBold">heyday of the Simplon Orient-Express.</span>
               Behind me, two gentlemen
@@ -217,15 +218,15 @@
 
     <!-- Embarking a journey of discovery-->
     <section class="journeyOfDiscovery" id="journeyOfDiscovery">
-      <h2 class="titleh2">
+      <h2 class="titleh2 gsapANDiscoveryh2">
         Embarking a journey <br> of discovery
       </h2>
-      <p>
+      <p class="gsapANDiscoveryp">
         The platform was bustling, making it all the more intriguing. Even with the most vivid imagination, one could
         not fathom <span class="accentBold">the diverse group of people gathering! Diplomats and statesmen, stars and
           aristocrats, artists and writers, </span> even Eastern traders and Indian Maharajas heading home.
       </p>
-      <p class="journeyOfDiscovery_2ndP">
+      <p class="journeyOfDiscovery_2ndP gsapANDiscoveryp2">
         Our luggage was carefully loaded into baggage cars, and an attendant led us to our compartments. Ready to
         depart! <span class="accentBold">First stop: Dijon, then Lausanne, Milan, Venice, Trieste, Zagreb, Belgrade, and
           Sofia, finally arriving in Istanbul.</span> There, we enjoyed an overnight stay at the Pera Palace Hotel,
@@ -233,21 +234,21 @@
         Nagelmackers'
         Compagnie Internationale des Grands Hôtels.
       </p>
-      <img src="/assets/svg/Laguage.svg" alt="picture of luggage">
+      <img src="/assets/svg/Laguage.svg" alt="picture of luggage" class="gsapANDiscoveryIMG">
     </section>
 
     <!-- DESK -->
     <div id="journeyOfDiscoveryDESK" class="DESKEmberking not_PHONE">
       <section class="DESKEmberking_section">
-        <h2 class="titleh2">
+        <h2 class="titleh2 gsapANDiscoveryh2">
           Embarking a journey <br> of discovery
         </h2>
-        <p>
+        <p class="gsapANDiscoveryp">
           The platform was bustling, making it all the more intriguing. Even with the most vivid imagination, one could
           not fathom <span class="accentBold">the diverse group of people gathering! Diplomats and statesmen, stars and
             aristocrats, artists and writers, </span> even Eastern traders and Indian Maharajas heading home.
         </p>
-        <p class="journeyOfDiscovery_2ndP">
+        <p class="journeyOfDiscovery_2ndP gsapANDiscoveryp2">
           Our luggage was carefully loaded into baggage cars, and an attendant led us to our compartments. Ready to
           depart! <span class="accentBold">First stop: Dijon, then Lausanne, Milan, Venice, Trieste, Zagreb, Belgrade,
             and
@@ -257,7 +258,7 @@
           Compagnie Internationale des Grands Hôtels.
         </p>
       </section>
-      <img src="/assets/svg/Laguage.svg" alt="picture of luggage" class="DESKEmberking_img">
+      <img src="/assets/svg/Laguage.svg" alt="picture of luggage" class="DESKEmberking_img gsapANDiscoveryIMG">
     </div>
 
     <!-- Unparralleled luxury -->
@@ -273,13 +274,13 @@
           their own spaces. Two beds stacked, a personal sink, and walls adorned with exquisite marquetry. Crisp linens
           and woolen blankets adorned the beds, and we even had a button to summon the butler!
         </p>
-        <h3>
+        <h3 class="gsaph3Luxury">
           Dicover for each wagon what kind of luxury there is
         </h3>
-        <p>
+        <p class="gsaph3Luxury">
           The train consisted of 5 sleeping cars, a dining car, and two baggage cars. No lounge
         </p>
-        <div class="ux_swipe mobileSwipe">
+        <div class="ux_swipe mobileSwipe gsaph3Luxury">
           <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
             type="module"></script>
 
@@ -425,23 +426,29 @@
     </section>
 
     <!-- Through 7 countries -->
-    <section class="sevenCountries not_DESK" id="sevenCountries">
-      <h2 class="titleh2">Trough 7 countries</h2>
-      <img src="/assets/svg/Stamp_combo_AE.svg" alt="illustration of stamp Athens and Egypt" class="stampAE">
-      <p class="sevenCountries_p1">
-        The journey from Paris to Istanbul took only three days because the train ran day and night. I had expected a
-        tiring journey, but the ease and comfort astonished me.<span class="accentBold"> At the
-          beginning of the journey, the train conductor collected all the necessary documents, sparing us from being
-          awakened at night for border controls.</span>
-      </p>
-      <p>
-        It was fascinating to see the landscape change. <span class="accentBold">The farther we traveled, the
-          more exotic the surroundings became.</span> With the Simplon Orient-Express, you could also travel to Athens.
-        In Belgrade, the two cars destined for that journey were uncoupled, immediately replaced by two others: one from
-        Berlin and one via Vienna. This gave us the opportunity to enjoy the enchanting view in Belgrade.
-      </p>
-      <img src="/assets/svg/ParisStamp.svg" alt="illustration Stamp of Paris" class="stampParis">
-    </section>
+    <div class="sevenCountries not_DESK" id="sevenCountries">
+      <section class="gsapMOBTrough1">
+        <h2 class="titleh2">Trough 7 countries</h2>
+        <img src="/assets/svg/Stamp_combo_AE.svg" alt="illustration of stamp Athens and Egypt" class="stampAE">
+        <p class="sevenCountries_p1">
+          The journey from Paris to Istanbul took only three days because the train ran day and night. I had expected a
+          tiring journey, but the ease and comfort astonished me.<span class="accentBold"> At the
+            beginning of the journey, the train conductor collected all the necessary documents, sparing us from being
+            awakened at night for border controls.</span>
+        </p>
+      </section>
+      <section class="gsapMOBTrough2">
+        <p>
+          It was fascinating to see the landscape change. <span class="accentBold">The farther we traveled, the
+            more exotic the surroundings became.</span> With the Simplon Orient-Express, you could also travel to
+          Athens.
+          In Belgrade, the two cars destined for that journey were uncoupled, immediately replaced by two others: one
+          from
+          Berlin and one via Vienna. This gave us the opportunity to enjoy the enchanting view in Belgrade.
+        </p>
+        <img src="/assets/svg/ParisStamp.svg" alt="illustration Stamp of Paris" class="stampParis">
+      </section>
+    </div>
 
     <!-- DESK -->
     <div class="sevenCountriesDESK not_PHONE" id="sevenCountries">
@@ -473,7 +480,7 @@
 
     <!--BridgeBewteen-->
     <section class="bridge" id="bridge">
-      <section>
+      <section class="gsapAN_bridge">
         <h2 class="titleh2">A bridge between <br> east and west</h2>
         <p>
           Eventually, we reached the
@@ -492,9 +499,10 @@
     </section>
 
     <!-- video scrolltriger -->
-    <dotlottie-player src="https://lottie.host/a3197dca-63e5-4b0e-839f-a256f01f8f37/RnY0LUxjsh.json"
-      background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay
-      class="dotlottie"></dotlottie-player>
+    <!-- <iframe src="https://lottie.host/embed/7c482758-2833-4cc8-ab90-30071677f4dc/Oq5fsLDHvO.json"
+      class="dotlottie"></iframe> -->
+    <div id="animationWindow">
+    </div>
 
 
 
@@ -1492,12 +1500,13 @@
           <button class="hasbutton">
             The ealry days
           </button>
-          <button class="hasbutton">
+          <but<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js">
+            </script>ton class="hasbutton">
             Full speed ahead
-          </button>
-          <button class="hasbutton">
-            In the beginning
-          </button>
+            </button>
+            <button class="hasbutton">
+              In the beginning
+            </button>
         </div>
       </div>
       </section>
