@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header_gsap">
     <nav class="navMobile not_DESK">
       <div class="navbar">
         <div class="container nav-container">
@@ -95,7 +95,7 @@
         <option value="eng">DE</option>
       </select>
     </nav>
-    <img src="/assets/svg/Logo.svg" alt="Logo of train world" class="logo not_DESK">
+    <img src="/assets/svg/Logo.svg" alt="iconTW" class="iconTW not_DESK">
     <div class="Sun"></div>
     <img src="/assets/svg/berlin.svg" alt="Tower of Berlin" class="berlinTower">
     <img src="assets/svg/belguim.svg" alt="Atomium in Belgium" class="belgiumAtomium">
@@ -109,10 +109,10 @@
     <!-- Journey to Caïro -->
     <section class="journeyToCaïro" id="journeyToCairo">
       <div class="DESK_container">
-        <h2 class="titleh2 ">
+        <h2 class="titleh2 gsap_h2_Cairo">
           Journey To Caïro
         </h2>
-        <p>
+        <p class="gsap_p_Cairo">
           I vividly recall the disbelief that nearly overwhelmed me. There we stood, on the enchanting platform of <span
             class="accentBold">Gare de
             Lyon in Paris.</span> At that time, I was a young Parisian governess, employed by a wealthy businessman who
@@ -127,36 +127,39 @@
       <img src="/assets/PiramidesOfGiza.webp" alt="Piramids of Giza" class="DESK_year">
     </section>
     <!-- 1889 -->
-    <img src="/assets/svg/Desk_Year.svg" alt="year image" class="BIYear_DESK not_PHONE">
-    <div class="yearDESK_alldata">
-      <div class="data1889">
-        <img src="/assets/svg/1889DESK.svg" alt="Year 1889" class="DESK_year1889 not_PHONE DESKimg1889">
-        <img src="/assets/svg/1889.svg" alt="Year 1889" class="yearBig not_DESK">
-        <p>Since 1889, one could <span class="accentBold">travel from Paris to Istanbul in just 3 nights twice a
-            week</span>. In 1906, the Simplon Tunnel
-          opened, cutting through the Alps, allowing the train to smoothly journey from Switzerland to Italy. It seemed
-          almost unimaginable at the time.
-        </p>
-      </div>
-      <!-- 1930 -->
-      <img src="/assets/Georges.webp" alt="Foto van Georges Nagelmackers" class="not_PHONE year_img">
-      <div class="data1930">
-        <img src="/assets/svg/1930.svg" alt="Year 1930" class="yearBig not_DESK">
-        <img src="/assets/svg/1930DESK.svg" alt=" Year 1930" class="DESK_year1889 not_PHONE DESKimg1930">
-        <div class="data1930_flexbox">
-          <img src="/assets/Georges.webp" alt="Foto van Georges Nagelmackers" class="NOT_DESK">
-          <p>
-            In the year 1930, we witnessed the <span class="accentBold">heyday of the Simplon Orient-Express.</span>
-            Behind me, two gentlemen
-            enthusiastically discussed the adventure that lay ahead. Although the train
-            originated in Europe, the first sleeper trains were introduced in America. The ingenious Belgian engineer
-            Georges Nagelmackers brought them to Europe, making them more luxurious than ever by founding the Compagnie
-            Internationale des Wagons-Lits.
+    <div class="gsapYearCaontainer">
+      <img src="/assets/svg/Desk_Year.svg" alt="year image" class="BIYear_DESK not_PHONE">
+      <div class="yearDESK_alldata">
+        <div class="data1889">
+          <img src="/assets/svg/1889DESK.svg" alt="Year 1889" class="DESK_year1889 not_PHONE DESKimg1889">
+          <img src="/assets/svg/1889.svg" alt="Year 1889" class="yearBig not_DESK gsapMOB1889">
+          <p>Since 1889, one could <span class="accentBold">travel from Paris to Istanbul in just 3 nights twice a
+              week</span>. In 1906, the Simplon Tunnel
+            opened, cutting through the Alps, allowing the train to smoothly journey from Switzerland to Italy. It
+            seemed
+            almost unimaginable at the time.
           </p>
+        </div>
+        <!-- 1930 -->
+        <img src="/assets/Georges.webp" alt="Foto van Georges Nagelmackers" class="not_PHONE year_img">
+        <div class="data1930">
+          <img src="/assets/svg/1930.svg" alt="Year 1930" class="yearBig not_DESK gsapMOB1930">
+          <img src="/assets/svg/1930DESK.svg" alt=" Year 1930" class="DESK_year1889 not_PHONE DESKimg1930">
+          <div class="data1930_flexbox">
+            <img src="/assets/Georges.webp" alt="Foto van Georges Nagelmackers" class="NOT_DESK">
+            <p>
+              In the year 1930, we witnessed the <span class="accentBold">heyday of the Simplon Orient-Express.</span>
+              Behind me, two gentlemen
+              enthusiastically discussed the adventure that lay ahead. Although the train
+              originated in Europe, the first sleeper trains were introduced in America. The ingenious Belgian engineer
+              Georges Nagelmackers brought them to Europe, making them more luxurious than ever by founding the
+              Compagnie
+              Internationale des Wagons-Lits.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- interactive map Paris->.... -->
     <div class="interactiveMap" id="interactiveMap">
       <div class="widerScreen">
@@ -1481,7 +1484,7 @@
         </p>
       </section>
 
-      <div">
+      <div>
         <h3>
           Last stories
         </h3>
@@ -1496,14 +1499,17 @@
             In the beginning
           </button>
         </div>
-    </div>
-    </section>
+      </div>
+      </section>
 
 
-    <!-- END OF CODE -->
+      <!-- END OF CODE -->
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script type="module" src="/main.js"></script>
   <script src="/dropdownScript.js"></script>
+  <script src="/gsap.js"></script>
 </body>
 
 </html>

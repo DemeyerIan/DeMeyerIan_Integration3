@@ -44,6 +44,7 @@ html{
   background-color: var(--backgroundColor);
   font-family: var(--sofia);
   color: var(--black);
+  overflow-x: hidden;
 }
 body{
   overflow-x: hidden;
@@ -341,6 +342,18 @@ header{
   right: 15px;
   font-size: 1.2rem;
   color: var(--purple);
+  
+}
+
+.navMobile{
+  z-index: 1000;
+}
+.iconTW{
+  position: absolute;
+  z-index: 1200;
+  top: 2%;
+  left: 80%;
+  width: 15%;
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
