@@ -200,7 +200,7 @@ const init = () => {
         /*gsap scrolltrigger animation*/
         LottieScrollTrigger({
             target: "#animationWindow", // Replace with your element's selector
-            path: "/assets/json/animation.json",
+            path: "/INT3/assets/json/animation.json",
             speed: "slow",
             // markers: true,
             start: "top top",
