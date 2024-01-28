@@ -48,6 +48,8 @@ const desKaasButton = document.querySelector('.DESKKaas');
 const experienceDiv = document.querySelector('.DESKExperienceInnhher');
 
 
+
+
 const init = () => {
   //document.querySelector('html').
 
@@ -561,6 +563,11 @@ const init = () => {
   });
 
 
+
+
+
 }
+
+
 
 init();

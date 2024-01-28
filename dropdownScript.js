@@ -1,13 +1,3 @@
-document.querySelectorAll('.steplist').forEach(steplist => {
-    steplist.addEventListener('click', function (event) {
-        if (event.target.nodeName !== 'LI') return;
-        const items = event.target.closest('.steplist').querySelectorAll('li');
-        for (const item of items) {
-            item.classList.toggle('active', item === event.target);
-        }
-    });
-});
-
 class Destination {
 
     constructor(name, time) {
@@ -36,7 +26,7 @@ class Destination {
 
 
 /*array of the stops*/
-routes = {}
+let routes = {}
 
 routes["--none"] = [
     new Destination("Paris", ""),
@@ -114,7 +104,7 @@ function createDropdown() {
     }
 
 }
-function updateMenu() {
+window.updateMenu = function () {
     const dropdown = document.getElementById("dropDown");
     selectedEndCity = dropdown.value;
     createMenu();
@@ -141,8 +131,19 @@ function updateMenu() {
     }
 }
 
+const init = () => {
+    document.querySelectorAll('.steplist').forEach(steplist => {
+        steplist.addEventListener('click', function (event) {
+            if (event.target.nodeName !== 'LI') return;
+            const items = event.target.closest('.steplist').querySelectorAll('li');
+            for (const item of items) {
+                item.classList.toggle('active', item === event.target);
+            }
+        });
+    });
 
-document.addEventListener('DOMContentLoaded', function () {
-    createMenu()
-    createDropdown()
-})
+    createMenu();
+    createDropdown();
+}
+
+document.addEventListener('DOMContentLoaded', init);
