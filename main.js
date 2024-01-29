@@ -51,6 +51,7 @@ const experienceDiv = document.querySelector('.DESKExperienceInnhher');
 
 
 const init = () => {
+
   //document.querySelector('html').
 
   document.querySelector(".istanbull").addEventListener("click", function () {
@@ -562,10 +563,140 @@ const init = () => {
         `;
   });
 
+  window.onload = function () {
+    let element = document.querySelector(".interactiveMap");
+    if (element) {
+      element.style.display = "block";
+    }
+  }
+
+
+  window.onload = function () {
+    let element = document.querySelector(".flexboxCarDetails");
+    if (element) {
+      element.style.display = "block";
+    }
+  }
+
+
+  const experienceNoJavaElement = document.querySelector('.noJavakkk');
+  experienceNoJavaElement.style.display = 'none';
+
+  const noJavaTrain = document.querySelector('.flexboxCarDetails');
+  noJavaTrain.style.display = 'flex';
+
+  const expeirenceJava = document.querySelector('.container_popUp_testimonials');
+  expeirenceJava.style.display = 'flex';
+
+  const notjsIMGbrug = document.querySelector('.notjsImgBrug');
+  notjsIMGbrug.style.display = 'none';
+
+
+  window.onload = function () {
+    const notjsANIbrug = document.querySelector('.notjsANIBrugsmall');
+
+    function checkMediaQuery() {
+      if (window.matchMedia("(min-width: 1025px)").matches) {
+        // If media query matches
+        notjsANIbrug.style.display = 'none';
+      } else {
+        notjsANIbrug.style.display = 'block';
+      }
+    }
+
+    // Call the function initially to set the display based on the initial viewport size
+    checkMediaQuery();
+
+    // Call the function whenever the window is resized
+    window.addEventListener('resize', checkMediaQuery);
+  }
+  const notjsExperience = document.querySelector('.ExperienceNojava');
+  notjsExperience.style.display = 'none';
+
+
+  window.onload = function () {
+    const notjsANItunnel = document.querySelector('.notJSANItunnelSmall');
+
+    function checkMediaQuery() {
+      if (window.matchMedia("(min-width: 1025px)").matches) {
+        // If media query matches
+        notjsANItunnel.style.display = 'none';
+      } else {
+        notjsANItunnel.style.display = 'block';
+      }
+    }
+
+    // Call the function initially to set the display based on the initial viewport size
+    checkMediaQuery();
+
+    // Call the function whenever the window is resized
+    window.addEventListener('resize', checkMediaQuery);
+  }
+
+
+  const InteracticeMOB = document.querySelector('.interactiveMap');
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth <= 1024) {
+      InteracticeMOB.style.display = 'block';
+    } else {
+      InteracticeMOB.style.display = 'none';
+    }
+  });
+
+  // Trigger the event listener once to set the initial state
+  window.dispatchEvent(new Event('resize'));
+
+
+  const notjsANItunnelimg = document.querySelector('.notjsTunnelImg');
+  notjsANItunnelimg.style.display = 'none';
+
+
+  window.onload = function () {
+    const element = document.getElementById('sevenCountries');
+    element.classList.remove('noJSmargin');
+  }
+
+  window.onload = function () {
+    let element = document.querySelector(".dModels");
+    if (element) {
+      element.style.display = "block";
+    }
+  }
+
+
+  const interactiveMap = document.querySelector('.interactiveMap_dropdown');
+
+  function checkMediaQuery() {
+    // Get the .notjsANIBrug and .DESKFirstRow elements
+    var notjsANIBrug = document.querySelector('.notjsANIBrug');
+    var deskFirstRow = document.querySelector('.DESKFirstRow');
+
+    if (window.matchMedia("(min-width: 1025px)").matches) {
+      // If media query matches
+      interactiveMap.style.display = 'flex';
+      notjsANIBrug.style.display = 'block'; // Show the .notjsANIBrug element
+      deskFirstRow.style.display = 'flex'; // Show the .DESKFirstRow element
+    } else {
+      interactiveMap.style.display = 'none';
+      notjsANIBrug.style.display = 'none'; // Hide the .notjsANIBrug element
+      deskFirstRow.style.display = 'none'; // Hide the .DESKFirstRow element
+    }
+  }
+
+  // Call the function initially to set the display based on the initial viewport size
+  checkMediaQuery();
+
+  // Call the function whenever the window is resized
+  window.addEventListener('resize', checkMediaQuery);
+
+
+  document.querySelector('.bigbrugIMG').style.display = 'none';
 
 
 
 
+  document.querySelector('.imgTunnelBignoJS').style.display = 'none';
 }
 
 

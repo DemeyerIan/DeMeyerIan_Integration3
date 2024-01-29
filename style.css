@@ -686,10 +686,29 @@ body.dialog-open {
 }
 
 .container_popUp_testimonials {
-  display: flex;
+  display: none;
   flex-wrap: nowrap;
   overflow-x: scroll; /* Enable horizontal scrolling */
 
+}
+.notjsImgBrug{
+  display: block;
+}
+
+
+.notjsANIBrug{
+  display: none;
+}
+
+.notJSANItunnel{
+  display: none;
+
+}
+
+
+.notjsTunnelImg{
+  margin-left: -10%;
+  height: 100%;
 }
 
 strong{
@@ -697,20 +716,16 @@ strong{
 }
 
 
-.notJSSection {
-  display: none;
+.ExperienceNojava, .noJavakkk {
+  display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll; /* Enable horizontal scrolling */
   padding: 30px;
 }
 
-.js-enabled .notJSSection {
-  display: none;
-}
-
-.js-enabled .container_popUp_testimonials {
-  display: flex;
-  /* Add other styles as needed */
+.nojsIMGLuxury{
+  padding: 60px 30px 60px 0;
+  width: 90%;
 }
 
 
@@ -769,10 +784,10 @@ strong{
 }
 
 /*interactive map*/
-.interactiveMap{
-
+.interactiveMap{  
   overflow: hidden ;
   margin: 80px 0 30px 0;
+  display: none;
 }
 
 
@@ -855,7 +870,7 @@ strong{
   }
 
   .flexboxCarDetails {
-    display: flex;
+    display: none;
     overflow-x: auto;
     margin-top: 10px;
   }
@@ -1134,6 +1149,11 @@ strong{
   margin: 10px  auto;
 }
 
+.notjsANIBrug{
+  display: none;
+}
+
+
 .firstRowExpereince p{
   width: 90%;
   margin: 0 auto 30px auto;
@@ -1148,9 +1168,13 @@ strong{
   margin-left: 5%;
 }
 
+.ux_swipe{
+  display: none;
+}
 
-
-
+.bigbrugIMG{
+  display: none;
+}
 
 
 
@@ -1179,6 +1203,7 @@ strong{
 .dModels{
   width: 90%;
   margin: 0 auto;
+  display: none;
 }
 .dModels p{
   margin: 10px 0 10px 0;
@@ -1235,12 +1260,27 @@ background-color: transparent;
 }
 
 .interactiveMap_dropdown{
-  display: none;
+  display: none ;
 }
 
 .not_PHONE{
   display: none;
 }
+
+.gsapANDiscoveryh2{
+  margin-top: 60px;
+}
+
+.notjsANIBrug{
+  display: none;
+}
+
+
+.imgTunnelBignoJS{
+  display: none;
+
+}
+
 
 
 /*navigation hamburger*/
@@ -1542,7 +1582,7 @@ background-color: transparent;
   }
 
   .interactiveMap_dropdown{
-    display: flex;
+    display: none;
     width: 80%;
     height: 80vh;
     margin: 100px auto;
@@ -2187,6 +2227,41 @@ background-color: transparent;
 
 .chapter8:hover::before {
   content: "Experiences";
+}
+
+.small{
+  display: none;
+}
+.ExperienceNojava{
+  padding: 4rem;
+}
+
+.notJSarticle{
+  width: 30%;
+}
+
+.notjsImgBrug{
+  display: none;
+}
+
+.notjsANIBrug{
+  display: none;
+}
+
+.bigbrugIMG{
+  display: block;
+}
+
+.notjsTunnelImg{
+  display: none;
+}
+
+.imgTunnelBignoJS{
+  margin-top: -7%;
+  display: block;}
+
+.DESKFirstRow{
+  display: none;
 }
 
 }
